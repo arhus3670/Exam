@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+}
+
 
 .header {
     display: grid;
@@ -7,7 +13,15 @@
     background-color: lightblue;
 }
 .logo img {
+<<<<<<< Updated upstream
     height: 80px; /* Juster størrelsen etter behov */
+=======
+<<<<<<< HEAD
+    height: 50px; 
+=======
+    height: 80px; /* Juster størrelsen etter behov */
+>>>>>>> 4eaab35665c8682147f215f83db12e8031d61c8f
+>>>>>>> Stashed changes
 }
 
 .button{
@@ -28,8 +42,7 @@
     position: absolute;
     right: 0;
     background-color: #ffffff;
-    min-width: 50%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 30%;
     z-index: 1;
 }
 .dropdown:hover .dropdown-content {
@@ -45,11 +58,18 @@
     background-color: #ddd; 
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0; 
     font-family: sans-serif;
 }
+>>>>>>> 4eaab35665c8682147f215f83db12e8031d61c8f
 .Overskrift {
     width: 90%;
     height: 40vh;
