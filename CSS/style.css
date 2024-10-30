@@ -15,12 +15,13 @@
     color: white;
     padding: 20px;
     font-size: 20px;
-    border: none
+    border: none;
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-left: auto;
 }
 .dropdown-content {
     display: none;
@@ -44,7 +45,6 @@
     background-color: #ddd; 
 }
 
-
 * {
     margin: 0;
     padding: 0; 
@@ -55,14 +55,14 @@
     height: 40vh;
     font-size: xx-large;
     margin-top: 35%;
-    margin-left: 7%;
+    margin-left: auto;
 
 }
 .Underskrift {
     width: 90%;
     margin-top: -10%;
     font-size: large;
-    margin-left: 7%;
+    margin-left: auto;
 }
 .ABCD {
     width: 85%;
