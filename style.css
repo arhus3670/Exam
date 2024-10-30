@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+}
+.Overskrift {
+    width: 90%;
+    height: 40vh;
+    font-size: xx-large;
+    margin-top: 35%;
+    margin-left: 7%;
+
+}
+.Underskrift {
+    width: 90%;
+    margin-top: -10%;
+    font-size: large;
+    margin-left: 7%;
+}
+.ABCD {
+    width: 85%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
