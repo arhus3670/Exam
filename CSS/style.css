@@ -1,4 +1,11 @@
 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
 .header {
     display: grid;
     grid-template-columns:auto auto;
@@ -72,61 +79,3 @@
     align-items: center;
     justify-content: space-between;
 }
-
-.accordion {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    font-family: Arial, sans-serif;
-  }
-  .accordion-item {
-    border-top: 1px solid #e0e0e0;
-  }
-  .accordion-title {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    background-color: #FFFFFF;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-  }
-  .accordion-title .icon {
-    font-size: 1.5rem;
-    color: #000; /* Svart tekst */
-    background-color: #ADD8E6; /* Lys blå bakgrunn */
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    font-weight: bold;
-  }
-  .accordion-content {
-    display: none;
-    padding: 15px;
-    background-color: #ffffff;
-    border-top: 1px solid #e0e0e0;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .accordion-content ul {
-    margin: 0;
-    padding-left: 20px;
-    margin-bottom: 10px; /* Avstand mellom elementene i listen */
-  }
-  .accordion-content li {
-    margin-bottom: 10px; /* Ekstra avstand mellom listepunktene */
-  }
-  
-  .custom-link {
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: #ADD8E6; /* Lys blå farge på understrek */
-  }
-
-  
