@@ -83,11 +83,11 @@
 
 .centered-text {
     text-align: center;
-    font-size: 18px; /* juster etter behov */
-    line-height: 1.5; /* juster etter behov */
+    font-size: 18px; 
+    line-height: 1.5; 
     margin: 0;
     padding: 0;
-    color: #333; /* eller annen ønsket farge */
+    color: #333; 
 }
 
 .line-break {
@@ -114,8 +114,8 @@
   }
   .accordion-title .icon {
     font-size: 1.5rem;
-    color: #000; /* Svart tekst */
-    background-color: #ADD8E6; /* Lys blå bakgrunn */
+    color: #000; 
+    background-color: #ADD8E6; 
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -137,17 +137,17 @@
   .accordion-content ul {
     margin: 0;
     padding-left: 20px;
-    margin-bottom: 10px; /* Avstand mellom elementene i listen */
+    margin-bottom: 10px; 
   }
   .accordion-content li {
-    margin-bottom: 10px; /* Ekstra avstand mellom listepunktene */
+    margin-bottom: 10px; 
   }
   
   .custom-link {
     color: black;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #ADD8E6; /* Lys blå farge på understrek */
+    text-decoration-color: #ADD8E6; 
   }
 
 

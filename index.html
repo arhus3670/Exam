@@ -207,13 +207,10 @@
           const icon = item.querySelector('.icon');
           const content = item.nextElementSibling;
     
-          // Toggle visibility of the content
           content.style.display = content.style.display === 'block' ? 'none' : 'block';
     
-          // Toggle the icon between "+" and "-"
           icon.textContent = content.style.display === 'block' ? '-' : '+';
     
-          // Close other items
           document.querySelectorAll('.accordion-content').forEach(otherContent => {
             if (otherContent !== content) {
               otherContent.style.display = 'none';
@@ -226,10 +223,8 @@
     subItem.addEventListener('click', () => {
       const subContent = subItem.nextElementSibling;
 
-      // Toggle visibility of the sub-content
       subContent.style.display = subContent.style.display === 'block' ? 'none' : 'block';
 
-      // Close other sub-accordion items in the same section
       subItem.parentElement.parentElement.querySelectorAll('.sub-accordion-content').forEach(otherSubContent => {
         if (otherSubContent !== subContent) {
           otherSubContent.style.display = 'none';
