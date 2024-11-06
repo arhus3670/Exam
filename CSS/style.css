@@ -81,6 +81,19 @@
 
 }
 
+.centered-text {
+    text-align: center;
+    font-size: 18px; /* juster etter behov */
+    line-height: 1.5; /* juster etter behov */
+    margin: 0;
+    padding: 0;
+    color: #333; /* eller annen ønsket farge */
+}
+
+.line-break {
+    display: block;
+}
+
 .accordion {
     width: 100%;
     max-width: 600px;
@@ -148,6 +161,60 @@
     margin: 0 auto;
     font-family: Arial,sans-serif;
     text-align: center;
+}
+
+.accordion-content {
+    padding-left: 40px;
+}
+
+.accordion-content {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.accordion-item .accordion-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ADD8E6;
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    padding-left: 40px;
+}
+
+.sub-accordion-item .sub-accordion-title {
+    font-size: 1rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.program-link {
+    color: #333;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #ADD8E6;
 }
 
 @media (max-width: 768px) {
