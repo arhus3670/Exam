@@ -6,23 +6,24 @@
     font-family: sans-serif;
 
 }
-.header {
+
+header {
     display: grid;
     grid-template-columns:auto auto;
-    align-items: right;
-    padding: 40px;
-    background-color: lightblue;
+    padding: 30px;
+    background-color: orange;
 }
 .logo img {
-    height: 80px;
+    /* width?*/
+    height: 80px; /*width og height i html*/
 }
  
-.button{
-    background-color: blue;
-    color: white;
+button{
+    background-color: orange;
     padding: 20px;
-    font-size: 20px;
+    font-size: 1.3em;
     border: none;
+    cursor: pointer; 
 }
  
 .dropdown {
@@ -30,32 +31,34 @@
     display: inline-block;
     margin-left: auto;
 }
-.dropdown-content {
+
+.dropdown:hover button {
+    background-color: darkorange;
+}
+
+nav {
     display: none;
     position: absolute;
-    right: 0;
-    background-color: #ffffff;
     min-width: 30%;
     z-index: 1;
 }
-.dropdown:hover .dropdown-content {
+
+.dropdown:hover nav{
     display: block;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {
-    background-color: #ddd;
 }
 
-* {
-    margin: 0;
-    padding: 0; 
-    font-family: sans-serif;
+nav a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
 }
+
+nav a:hover {
+    background-color: rgb(238, 237, 237);
+}
+
 .Overskrift {
     width: 90%;
     height: 40vh;
