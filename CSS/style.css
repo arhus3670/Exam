@@ -98,13 +98,21 @@ nav a:hover {
 }
 
 .accordion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    gap: 10px;
     width: 100%;
-    max-width: 600px;
     margin: auto;
     font-family: Arial, sans-serif;
   }
   .accordion-item {
     border-top: 1px solid #e0e0e0;
+    flex: 1 1 calc(33.33% - 10px); 
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
   }
   .accordion-title {
     display: flex;
@@ -118,7 +126,7 @@ nav a:hover {
   .accordion-title .icon {
     font-size: 1.5rem;
     color: #000; 
-    background-color: #ADD8E6; 
+    background-color: orange; 
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -135,6 +143,7 @@ nav a:hover {
     border-top: 1px solid #e0e0e0;
     font-size: 1.1rem;
     line-height: 1.6;
+    padding-left: 40px;
   }
   
   .accordion-content ul {
@@ -150,7 +159,7 @@ nav a:hover {
     color: black;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #ADD8E6; 
+    text-decoration-color: orange; 
   }
 
 
@@ -164,19 +173,6 @@ nav a:hover {
     margin: 0 auto;
     font-family: Arial,sans-serif;
     text-align: center;
-}
-
-.accordion-content {
-    padding-left: 40px;
-}
-
-.accordion-content {
-    width: 80%;
-    margin: 20px auto;
-    font-size: 1rem;
-    background-color: #FFFFFF;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
 }
 
 .accordion-item .accordion-title {
@@ -201,10 +197,6 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.accordion-content {
-    padding-left: 40px;
-}
-
 .sub-accordion-item .sub-accordion-title {
     font-size: 1rem;
     margin-top: 10px;
@@ -218,6 +210,25 @@ nav a:hover {
     font-weight: bold;
     text-decoration: underline;
     text-decoration-color: #ADD8E6;
+}
+
+/* Show '+' by default */
+.accordion-title .icon::before {
+    content: '+';
+}
+
+/* Change to '-' when the accordion is expanded */
+.accordion-checkbox:checked + .accordion-title .icon::before {
+    content: '-';
+}
+
+/* Display content when checkbox is checked */
+.accordion-checkbox:checked ~ .accordion-content {
+    display: block;
+}
+
+input[type="checkbox"]{
+    display: none;
 }
 
 @media (max-width: 768px) {
