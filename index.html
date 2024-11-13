@@ -77,12 +77,11 @@
           </ul>
         </div>
       </div>
-      <div class="learning-section">
-        <div class="accordion-item open">
-            <div class="accordion-title">
-                <span class="icon">+</span>
-                Hva lærer du?
-            </div>
+      <div class="accordion-item">
+        <input type="checkbox" id="item3" class="accordion-checkbox">
+        <label for="item3" class="accordion-title">
+          <span class="icon"></span>Hva lærer du?
+        </label>  
             <div class="accordion-content">
                 <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk.</p>
                 <p>Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer.</p>
@@ -92,9 +91,10 @@
                 
                 <div class="sub-accordion">
                     <div class="sub-accordion-item">
-                        <div class="sub-accordion-title">
-                            <span class="icon">+</span> Statistiske og datadrevne metoder
-                        </div>
+                      <input type="checkbox" id="item4" class="sub-accordion-checkbox">
+                      <label for="item4" class="sub-accordion-title">
+                        <span class="icon"></span> Statistiske og datadrevne metoder
+                      </label>
                         <div class="sub-accordion-content">
                             <p>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, 
                                for eksempel av fremtidige strømpriser.</p>
@@ -201,41 +201,7 @@
         </div>
       </div>
     </div>
-    
-    <script>
-      document.querySelectorAll('.accordion-title').forEach(item => {
-        item.addEventListener('click', () => {
-          const icon = item.querySelector('.icon');
-          const content = item.nextElementSibling;
-    
-          content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    
-          icon.textContent = content.style.display === 'block' ? '-' : '+';
-    
-          document.querySelectorAll('.accordion-content').forEach(otherContent => {
-            if (otherContent !== content) {
-              otherContent.style.display = 'none';
-              otherContent.previousElementSibling.querySelector('.icon').textContent = '+';
-            }
-          });
-        });
-      });
-      document.querySelectorAll('.sub-accordion-title').forEach(subItem => {
-    subItem.addEventListener('click', () => {
-      const subContent = subItem.nextElementSibling;
-
-      subContent.style.display = subContent.style.display === 'block' ? 'none' : 'block';
-
-      subItem.parentElement.parentElement.querySelectorAll('.sub-accordion-content').forEach(otherSubContent => {
-        if (otherSubContent !== subContent) {
-          otherSubContent.style.display = 'none';
-        }
-      });
-    });
-  });
-
-  </script>
-
+ 
     <footer>
       <div class="footer-left">
           <p>OSLO METROPOLITAN UNIVERSITY <br> STORBYUNIVERSITETET</p>

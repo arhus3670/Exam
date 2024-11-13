@@ -14,8 +14,8 @@ header {
     background-color: orange;
 }
 .logo img {
-    /* width?*/
-    height: 90px; /*width og height i html*/
+   
+    height: 90px; 
 }
  
 button{
@@ -184,13 +184,13 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.icon {
+.accordion-title.icon {
     width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ADD8E6;
+    background-color: orange;
     color: black;
     font-size: 1.5rem;
     margin-right: 10px;
@@ -209,26 +209,75 @@ nav a:hover {
     color: #333;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #ADD8E6;
+    text-decoration-color: orange;
 }
 
-/* Show '+' by default */
 .accordion-title .icon::before {
     content: '+';
 }
 
-/* Change to '-' when the accordion is expanded */
 .accordion-checkbox:checked + .accordion-title .icon::before {
     content: '-';
 }
 
-/* Display content when checkbox is checked */
 .accordion-checkbox:checked ~ .accordion-content {
     display: block;
 }
 
+
 input[type="checkbox"]{
     display: none;
+}
+
+.sub-accordion-checkbox {
+    display: none;
+}
+
+.sub-accordion-checkbox:checked + .sub-accordion-title .icon {
+    content: '✔'; 
+    color: black; 
+}
+
+.sub-accordion-title .icon {
+    font-size: 1.5rem;
+    background-color: orange;
+    color: black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.sub-accordion-checkbox:checked ~ .sub-accordion-content {
+    display: block;
+}
+
+.sub-accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #e0e0e0;
+}
+
+.sub-accordion-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.sub-accordion-checkbox:not(:checked) + .sub-accordion-title .icon::before {
+    content: '+';
+}
+
+
+.sub-accordion-checkbox:checked + .sub-accordion-title .icon::before {
+    content: '-';
 }
 
 @media (max-width: 768px) {
