@@ -10,10 +10,9 @@ header{
     
 }
 
-/*grid-layout with 4 columns and 5 row with equal gap between the rows and columns*/
+/*grid-layout med 4 kolonner og 5 rader*/
 .main-grid{
     display: grid;
-    gap: 45px 45px;
 }
 
 .rad1{
@@ -45,11 +44,11 @@ header{
     padding: 100px;
 }
 
-
+/*lignende bøker i vanrett rekkefølge*/
 .bøker{
     border-style: solid;
     border-width: 1px;
-    margin: 5px;
+    margin: 7px;
     float: left;
     width: 180px;
 }
@@ -63,6 +62,7 @@ header{
     width: 100%;
     height: auto;
   }
+
 
 .rad4{
     grid-column: 1/3;
