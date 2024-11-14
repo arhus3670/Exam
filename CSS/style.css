@@ -114,18 +114,18 @@ nav a:hover {
     /* Boks Modell */
     width: 256.672px;
     max-width: 50%;
-    max-height: 500px;
-    padding: 32px 20em 32px 32px;
+    max-height: 300px;
+    padding: 32px 15em 32px 32px;
     border-top: 3px  solid black;
     margin: auto;
 }
 
 .boks-1 ,.boks-2 {
     background-color:goldenrod;
-    width: 1000px;
+    width: 700px;
     max-width: 40%;
     max-height: 500px;
-    padding: 32px 20em 320px 32px;
+    padding: 32px 15em 320px 32px;
     margin-top: 3em;
     margin-right: 2em;
     border-top: 3px solid black;
