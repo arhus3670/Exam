@@ -42,10 +42,27 @@ header{
 .rad3{
     grid-column: 2/4;
     grid-row: 3;
-    background-color: blueviolet;
     padding: 100px;
-
 }
+
+
+.bøker{
+    border-style: solid;
+    border-width: 1px;
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+
+.bøker:hover {
+    border-width: 1px;
+    border-style: solid;
+  }
+
+.bøker img {
+    width: 100%;
+    height: auto;
+  }
 
 .rad4{
     grid-column: 1/3;
