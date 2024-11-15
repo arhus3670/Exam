@@ -49,9 +49,9 @@ header{
 .bøker{
     border-style: solid;
     border-width: 1px;
-    margin: 7px;
+    margin: 5px;
     float: left;
-    width: 180px;
+    width: 100px;
 }
 
 /*styling av linker til lignende bøker*/
