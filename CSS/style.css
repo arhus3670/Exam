@@ -71,16 +71,18 @@ nav a:hover {
     float: left;
     height: 70em;
     padding-right: -5%;
+    margin-bottom: -30em;
 } 
 
 .div2{
     width: 50%;
     float: right;
     height: 70em;
+    margin-bottom: -30em;
 }
 
 .container ,.container-2 ,.container-3 ,.container-4 {
-    width: 100%;
+    width: 110%;
     margin-top: 2em;
     margin-right: 70%;
     margin-left: 2%;
@@ -95,7 +97,7 @@ nav a:hover {
 .container-5 {
     width: 100%;
     margin-top: -1em;
-    margin-left: 3em;
+    margin-left: 0em;
     display:grid;
     flex-direction: column;
     justify-content: space-evenly;
@@ -117,19 +119,19 @@ nav a:hover {
 
 .boks-1 ,.boks-2 {
     /* background-color:goldenrod; */
-    width: 100px;
+    width: 200px;
     max-width: 40%;
     max-height: 500px;
-    padding: 20px 15em 200px 32px;
+    padding: 20px 10em 200px 32px;
     margin-top: 3em;
-    margin-right: 4em;
+    margin-right: 2em;
     border-top: 3px solid black;
 }
 
 .boks-1 h1 ,.boks-2 h1 {
     align-self: center;
     display: flex;
-    margin-left: 30%;
+    margin-left: 10%;
 }
 /* slutt på tabell me informasjon */
 
