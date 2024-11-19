@@ -14,8 +14,7 @@ header {
     background-color: orange;
 }
 .logo img {
-   
-    height: 90px; 
+    height: 90px; /*width og height i html*/
 }
  
 button{
@@ -65,24 +64,74 @@ nav a:hover {
     font-size: xx-large;
     margin-top: 35%;
     margin-left: auto;
+}
 
+.div1{ 
+    width: 50%;
+    float: left;
+    height: 70em;
+    padding-right: -5%;
+} 
+
+.div2{
+    width: 50%;
+    float: right;
+    height: 70em;
 }
-.Underskrift {
-    width: 90%;
-    margin-top: -10%;
-    font-size: large;
-    margin-left: auto;
-}
-.ABCD {
-    width: 85%;
-    margin-left: 10%;
-    margin-top: 10px;
-    padding: 20px 0;
+
+.container ,.container-2 ,.container-3 ,.container-4 {
+    width: 100%;
+    margin-top: 2em;
+    margin-right: 70%;
+    margin-left: 2%;
     display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    flex-wrap: wrap; 
     align-items: center;
-    justify-content: space-between;
-
+    gap: 1em;
 }
+
+.container-5 {
+    width: 100%;
+    margin-top: -1em;
+    margin-left: 3em;
+    display:grid;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.box-1 ,.box-2 ,.box-3 ,.box-4 ,.box-5 ,.box-6 ,.box-7  {
+   /* background-color:goldenrod; */
+    /* Boks Modell */
+    width: 200px;
+    max-width: 50%;
+    max-height: 400px;
+    padding: 20px 8em 20px 20px;
+    border-top: 3px  solid black;
+    margin: auto;
+}
+
+.boks-1 ,.boks-2 {
+    /* background-color:goldenrod; */
+    width: 100px;
+    max-width: 40%;
+    max-height: 500px;
+    padding: 20px 15em 200px 32px;
+    margin-top: 3em;
+    margin-right: 4em;
+    border-top: 3px solid black;
+}
+
+.boks-1 h1 ,.boks-2 h1 {
+    align-self: center;
+    display: flex;
+    margin-left: 30%;
+}
+/* slutt på tabell me informasjon */
 
 .centered-text {
     text-align: center;
@@ -104,7 +153,7 @@ nav a:hover {
     gap: 10px;
     width: 100%;
     margin: auto;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-ser
   }
   .accordion-item {
     border-top: 1px solid #e0e0e0;
@@ -113,6 +162,8 @@ nav a:hover {
     padding: 10px;
     box-sizing: border-box;
     background-color: #fff;
+    min-height: 200px;
+    
   }
   .accordion-title {
     display: flex;
@@ -143,7 +194,8 @@ nav a:hover {
     border-top: 1px solid #e0e0e0;
     font-size: 1.1rem;
     line-height: 1.6;
-    padding-left: 40px;
+    
+    
   }
   
   .accordion-content ul {
@@ -159,7 +211,7 @@ nav a:hover {
     color: black;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: orange; 
+    text-decoration-color: orange;
   }
 
 
@@ -175,6 +227,19 @@ nav a:hover {
     text-align: center;
 }
 
+.accordion-content {
+    padding-left: 40px;
+}
+
+.accordion-content {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1rem;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
 .accordion-item .accordion-title {
     font-size: 1.2rem;
     font-weight: bold;
@@ -184,17 +249,24 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.accordion-title.icon {
+.icon {
+    font-size: 1.5rem;
+    background-color: orange;
+    color: black;
+    border-radius: 50%;
     width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: orange;
-    color: black;
-    font-size: 1.5rem;
     margin-right: 10px;
-    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+.accordion-content {
+    padding-left: 40px;
 }
 
 .sub-accordion-item .sub-accordion-title {
@@ -215,6 +287,7 @@ nav a:hover {
 .accordion-title .icon::before {
     content: '+';
 }
+
 
 .accordion-checkbox:checked + .accordion-title .icon::before {
     content: '-';
@@ -251,6 +324,7 @@ input[type="checkbox"]{
     margin-right: 10px;
     font-weight: bold;
 }
+
 
 .sub-accordion-checkbox:checked ~ .sub-accordion-content {
     display: block;
@@ -303,6 +377,7 @@ input[type="checkbox"]{
         font-size: 16px;
     }
 }
+
 
 @media (max-width: 480px) {
     .button {
