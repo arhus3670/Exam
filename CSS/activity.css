@@ -9,6 +9,47 @@ header{
     padding: 35px;
     
 }
+button{
+    background-color: orange;
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer; 
+}
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.dropdown:hover button {
+    background-color: darkorange;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    min-width: 30%;
+    z-index: 1;
+}
+
+.dropdown:hover nav{
+    display: block;
+}
+
+nav a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    background-color: white;
+}
+
+nav a:hover {
+    background-color: rgb(238, 237, 237);
+}
+
 
 /*grid-layout med 3 kolonner og 5 rader*/
 .main-grid{
