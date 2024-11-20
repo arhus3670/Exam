@@ -71,14 +71,14 @@ header {
     float: left;
     height: 70em;
     padding-right: -5%;
-    margin-bottom: -30em;
+    margin-bottom: auto;
 } 
 
 .div2{
     width: 50%;
     float: right;
     height: 70em;
-    margin-bottom: -30em;
+    
 }
 
 .container ,.container-2 ,.container-3 ,.container-4 {
