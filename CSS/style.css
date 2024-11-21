@@ -63,6 +63,11 @@ header {
     background-color: #000;
 }
 
+.intro.bilde{
+    width: 100%;
+    height: auto;;
+}
+
 .Overskrift {
     width: 90%;
     height: 40vh;
