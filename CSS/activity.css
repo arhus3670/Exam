@@ -75,7 +75,6 @@ body{
     padding-top: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-
 }
 
 
@@ -95,8 +94,10 @@ body{
     padding-top: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
+}
 
-
+.rad2 h2{
+    font-size: 1.5em;
 }
 
 /*bilde av den første boka på venstre side med to rader slått sammen*/
@@ -111,6 +112,10 @@ body{
 /*rad 3 med to kolonner slått sammen på høyre side. Bilde av bøkene er plassert i vanrett rekkefølge*/
 .lignende-bøker{
     padding-top: 50px;
+}
+
+.lignende-bøker h5{
+    font-size: 1.18em;
 }
 
 
@@ -135,11 +140,12 @@ body{
     padding-left: 25px;
     padding-top: 25px;
     padding-right: 25px;
-    padding-bottom: 25px;
-
-    
+    padding-bottom: 25px; 
 }
 
+.rad3 h4{
+    font-size: 1.5em;
+}
 
 
 /*bilde av den andre boka på høyre side med to rader slått sammen*/
