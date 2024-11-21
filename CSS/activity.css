@@ -10,7 +10,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: orange;
+    background-color: lightcoral
 }
 
 .activity-header img{
@@ -23,7 +23,7 @@ body{
 }
 
 .activity-meny {
-    background-color: orange;
+    background-color: lightcoral;
     padding: 20px;
     font-size: 1.3em;
     border: none;
@@ -31,7 +31,7 @@ body{
 }
 
 .activity-meny:hover{
-    background-color: darkorange;
+    background-color: rgba(239, 86, 86, 0.71);
 }
 
 .dropdown-content {
@@ -171,5 +171,5 @@ body{
 
 footer{
     padding: 50px;
-    background-color: skyblue;
+    background-color: lightcoral;
 }
