@@ -77,32 +77,30 @@ header {
     padding-bottom: auto;
 }
 
-.div1{ 
+.div1 { 
     width: 50%;
     float: left;
-    height: 70em;
+    height: auto;
     padding-right: -5%;
-    margin-bottom: -22em;
 } 
 
 .div2{
     width: 50%;
     float: right;
-    height: 70em;
-    margin-bottom: -22em
-}
+    height: auto;
+    height: inherit;
+} 
 
-.container ,.container-2 ,.container-3 ,.container-4 {
+.container {
     width: 110%;
     margin-top: 2em;
     margin-right: 70%;
-    margin-left: 2%;
     display: flex;
     flex-direction:row;
     justify-content:space-evenly;
     flex-wrap: wrap; 
     align-items: center;
-    gap: 10px;
+    gap: 1px;
 }
 
 .container-5 {
@@ -123,7 +121,7 @@ header {
     max-width: 50%;
     height: 60px;
     max-height: 400px;
-    padding: 20px 5em 0px 20px;
+    padding: 10px 5em 20px 20px;
     border-top: 3px  solid black;
     margin: auto;
 }
@@ -133,7 +131,7 @@ header {
     width: 500px;
     max-width: 50%;
     max-height: 500px;
-    padding: 20px 7em 1px 32px;
+    padding: 20px 7em 20px 32px;
     margin-top: 3em;
     margin-right: 2em;
     border-top: 3px solid black;
