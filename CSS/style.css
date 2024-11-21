@@ -63,7 +63,7 @@ header {
     background-color: #000;
 }
 
-.intro.bilde{
+.intro-bilde{
     width: 100%;
     margin-left: 6%;
     margin-top: 5%;
@@ -74,7 +74,7 @@ header {
     width: 80%;
     height: 40vh;
     font-size: xx-large;
-    margin-top: 35%;
+    margin-top: 5%;
     margin-left: auto;
     padding-bottom: auto;
 }
