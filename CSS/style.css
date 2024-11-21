@@ -15,9 +15,10 @@ header {
     background-color: orange;
 }
 .logo img {
-    height: 90px; /*width og height i html*/
+    height: 90px;
 }
  
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button*/
 .dropdown {
     position: relative;
     display: inline-block;
@@ -63,18 +64,16 @@ header {
     background-color: #000;
 }
 
-.intro-bilde{
-    height: auto;
-    margin-left: 10%;
-    margin-top: 10%;
+.intro.bilde{
     width: 100%;
+    height: auto;;
 }
 
 .Overskrift {
     width: 90%;
     height: 40vh;
     font-size: xx-large;
-    margin-top: 4%;
+    margin-top: 35%;
     margin-left: auto;
     padding-bottom: auto;
 }
