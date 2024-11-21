@@ -7,8 +7,9 @@
 }
 
 header {
-    display: grid;
-    grid-template-columns:auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px;
     background-color: orange;
 }
@@ -19,7 +20,6 @@ header {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: auto;
 }
     
 .meny-button {
