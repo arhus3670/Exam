@@ -63,16 +63,18 @@ header {
     background-color: #000;
 }
 
-.intro.bilde{
+.intro-bilde{
+    height: auto;
+    margin-left: 10%;
+    margin-top: 10%;
     width: 100%;
-    height: auto;;
 }
 
 .Overskrift {
     width: 90%;
     height: 40vh;
     font-size: xx-large;
-    margin-top: 35%;
+    margin-top: 4%;
     margin-left: auto;
     padding-bottom: auto;
 }
