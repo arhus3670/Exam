@@ -70,7 +70,7 @@ header {
     height: auto;;
 }
 
-.Overskrift {
+.Overskrift { /* plassering av overskriften */
     width: 90%;
     height: 25vh;
     margin-top: 5%;
@@ -79,31 +79,34 @@ header {
     padding-bottom: auto;
 }
 
-.Overskrift h1 {
+.Overskrift h1 { /* bytter på størrelsen av headingen */
     font-size: xx-large;
 }
 
-.Overskrift p {
+.Overskrift p { /* bytter på størrelsen og plasseringen av paragrafen */
     font-size: large;
+    margin-left: 40%;
+    display: flex;
 }
 
-.div1 { 
+.div1 { /* dele siden i to */
     width: 50%;
     float: left;
     height: auto;
-    padding-bottom: 50px;
+    margin-right: -500px;
+    padding-bottom: 150px;
 } 
 
-.div2{
-    width: 50%;
+.div2{ /* deler siden i to */
+    width: 50% ;
     float: right;
     height: auto;
-    padding-bottom: 50px;
+    margin-left: -200px auto;
+    padding-bottom: 150px;
 } 
 
-.container-2 ,.container-3 ,.container-4 ,.container {
+.container-2 ,.container-3 ,.container-4 ,.container { 
     width: 70%;
-    margin-top: 2em;
     margin-left: 15%;
     display: flex;
     flex-direction:row;
@@ -113,10 +116,10 @@ header {
     gap: 1px;
 }
 
-.container-5 {
-    width: 70%;
+.container-5 { 
+    width: 70% auto;
     margin-top: -1em;
-    margin-left: 6.5em;
+    margin-left: 6.5em auto;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -125,16 +128,17 @@ header {
 }
 
 .box-1 ,.box-2 ,.box-3 ,.box-4 ,.box-5 ,.box-6 ,.box-7  {
-   /* background-color:goldenrod; */
-    /* Boks Modell */
-    width: 100px;
+    /* Boks Modell i container 1-4 */
+    width: 125px;
+    min-width: 20%;
     max-width: 60%;
     height: 60px;
     max-height: 400px;
-    padding: 10px 4.5em 20px 20px;
+    padding: 10px 4.5em 20px 10px;
     border-top: 3px  solid black;
     margin: auto;
     font-size: medium;
+    gap: 100px;
 }
 
 .box-1 h1,.box-2 h1,.box-3 h1,.box-4 h1,.box-5 h1,.box-6 h1,.box-7 h1 {
@@ -142,7 +146,7 @@ header {
 }
 
 .boks-1 ,.boks-2 {
-    /* background-color:goldenrod; */
+    /* boks modell i container-5 */
     width: 400px;
     max-width: 50%; 
     max-height: 500px;
@@ -152,22 +156,22 @@ header {
     border-top: 3px solid black;
 }
 
-.boks-1 h1 ,.boks-2 h1 {
+.boks-1 h1 ,.boks-2 h1 { /* bytter heading størrelse og plasseringen */
     align-self: center;
     display: flex;
     margin-left: 10%;
     margin-right: 1%;
-    font-size: xx-large;
+    font-size: 1.5em;
 }
 
-.boks-2 li {
+.boks-2 li { /* bytter størrelsen og plasseringen til punktene med tekst i boks-2 */
     margin-top: 10px;
     font-size: large;
 }
 
-.boks-1 p {
+.boks-1 p { /* bytter størrelsen på tet i boks-1*/
     margin-top: 10px;
-    font-size: larger;
+    font-size: 20px;
 }
 /* slutt på tabell med informasjon */
 
