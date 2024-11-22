@@ -589,6 +589,7 @@ footer {
 
 .endringer-1, .endringer-2 {
     grid-row: 2;
+    padding: 100px; 
 
 }
 .endringer-1, .samarbeid-1 {
