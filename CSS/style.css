@@ -615,6 +615,25 @@ footer {
     
 }
 
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .github-main {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add space between items */
+    }
+
+    .samarbeid-1, 
+    .samarbeid-2, 
+    .endringer-1, 
+    .endringer-2, 
+    .fordeler {
+        grid-row: auto; /* Reset grid-row */
+        grid-column: auto; /* Reset grid-column */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
 
 
 
