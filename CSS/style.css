@@ -821,6 +821,7 @@ footer {
 .introduksjon{
     grid-column:3/4;
     grid-row: 1;
+    padding-right: 50px;
 }
 
 /*Bilde av den første boka på venstre side på rad 2 i første kolonne i grid-layout*/
@@ -837,9 +838,9 @@ footer {
     grid-row: 2;
     background-color: white;
     padding: 140px;
-    padding-left: 25px;
+    padding-left: 50px;
     padding-top: 25px;
-    padding-right: 25px;
+    padding-right: 50px;
     padding-bottom: 25px;
 }
 
@@ -874,9 +875,9 @@ footer {
     grid-row: 3;
     background-color: white;  
     padding: 140px;
-    padding-left: 25px;
+    padding-left: 50px;
     padding-top: 25px;
-    padding-right: 25px;
+    padding-right: 50px;
     padding-bottom: 25px; 
 }
 
