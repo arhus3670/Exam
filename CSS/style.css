@@ -1,6 +1,6 @@
 
 
-*{
+body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -393,60 +393,69 @@ input[type="checkbox"]{
 }
 
 
-.study-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 h1 {
     text-align: center;
-    font-size: 24px;
     margin-bottom: 20px;
 }
 
-h2 {
-    margin-top: 20px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    font-size: 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed;
 }
 
-h3 {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #555;
-}
-
-.semester {
-    margin-top: 10px;
-}
-
-.courses {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.course {
-    background: #f9f9f9;
+th, td {
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    word-wrap: break-word; /* Allows text to wrap within the cell */
 }
 
-.course p {
-    margin: 5px 0;
+th {
+    background-color: #4CAF50;
+    color: white;
 }
 
-.course strong {
-    font-size: 16px;
-    color: #0074d9;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    vertical-align: top;
+}
+
+/* Style for study year rows */
+.study-year {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ensures the columns are wide enough to fit the content */
+table td, table th {
+    min-width: 150px;
+    word-wrap: break-word;
+}
+
+/* Responsiveness: table becomes scrollable on smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        white-space: nowrap;
+    }
+}
+
 
 .sub-accordion-checkbox:not(:checked) + .sub-accordion-title .icon::before {
     content: '+';
@@ -561,9 +570,181 @@ h2 {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: orange;
     padding: 110px;
     gap: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Starten på acitivity siden*/
+.activity-body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*header-stil med bruk av flex*/
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: lightcoral
+}
+
+.activity-header img{
+    height: 40px;
+}
+
+/*Meny-button med bakgrunnsfarge uten border*/
+.activity-meny {
+    background-color: lightcoral;
+    padding: 20px;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer; 
+}
+
+.activity-meny:hover{
+    background-color: rgba(239, 86, 86, 0.71);
+}
+
+/*grid-layout med 3 kolonner og 3 rader*/
+.main-grid{
+    display: grid;
+    margin: 5px;
+}
+
+/*bilde på venstre side av rad 1 i grid-layout*/
+.rad1{
+    grid-column: 1/3;
+    grid-row: 1;
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+
+/*tekst på høyre side av rad 1 i grid-layout*/
+.introduksjon{
+    grid-column:3/4;
+    grid-row: 1;
+}
+
+/*Bilde av den første boka på venstre side på rad 2 i første kolonne i grid-layout*/
+.bok1{
+    grid-column: 1/2;
+    grid-row: 2;
+    background-color: rgba(0, 0, 255, 0.459);
+    padding: 100px;
+} 
+
+/*rad 2 med 2 kolonner slått sammen til ett på høyre side i grid-layout*/
+.rad2{
+    grid-column: 2/4;
+    grid-row: 2;
+    background-color: white;
+    padding: 140px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+.rad2 h2{
+    font-size: 1.5em;
+}
+
+.lignende-bøker{
+    padding-top: 50px;
+}
+
+.lignende-bøker h5{
+    font-size: 1.18em;
+}
+
+/*Bilde av bøkene er plassert i vanrett rekkefølge i både rad 2 og 3*/
+.bøker{ 
+    margin: 20px;
+    float: left;
+    width: 100px;
+}
+
+.bøker img {
+    width: 100%;
+    height: auto;
+  }
+
+
+/*rad 3 med 2 kolonner slått sammen på venstre side i grid-layout.*/
+.rad3{
+    grid-column: 1/3;
+    grid-row: 3;
+    background-color: white;  
+    padding: 140px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px; 
+}
+
+.rad3 h4{
+    font-size: 1.5em;
+}
+
+
+/*bilde av den andre boka på høyre side med i rad*/
+.bok2{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: rgba(124, 11, 11, 0.357);
+    padding: 100px;
+
+}
+
+
+/*styling av linker til lignende bøker*/
+.bøker a:link{
+    text-decoration: none;
+    color: rgb(65, 32, 214);
+}
+
+/*normal link som ikke er besøkt*/
+.bøker a:hover {
+    text-decoration: underline;
+}
+
+/*besøkt link med farge og text dekrasjon*/
+.bøker a:visited{
+    text-decoration:none;
+    color: grey;
+}  
+
+/*footer-stil*/
+.activity-footer{
+    padding: 50px;
+    background-color: lightcoral;
 }
