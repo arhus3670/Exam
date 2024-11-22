@@ -389,60 +389,69 @@ input[type="checkbox"]{
 }
 
 
-.study-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
 h1 {
     text-align: center;
-    font-size: 24px;
     margin-bottom: 20px;
 }
 
-h2 {
-    margin-top: 20px;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
-    font-size: 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    table-layout: fixed;
 }
 
-h3 {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #555;
-}
-
-.semester {
-    margin-top: 10px;
-}
-
-.courses {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.course {
-    background: #f9f9f9;
+th, td {
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    word-wrap: break-word; /* Allows text to wrap within the cell */
 }
 
-.course p {
-    margin: 5px 0;
+th {
+    background-color: #4CAF50;
+    color: white;
 }
 
-.course strong {
-    font-size: 16px;
-    color: #0074d9;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    vertical-align: top;
+}
+
+/* Style for study year rows */
+.study-year {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ensures the columns are wide enough to fit the content */
+table td, table th {
+    min-width: 150px;
+    word-wrap: break-word;
+}
+
+/* Responsiveness: table becomes scrollable on smaller screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        white-space: nowrap;
+    }
+}
+
 
 .sub-accordion-checkbox:not(:checked) + .sub-accordion-title .icon::before {
     content: '+';
