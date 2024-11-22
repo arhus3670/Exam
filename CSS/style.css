@@ -822,6 +822,7 @@ footer {
     grid-column:3/4;
     grid-row: 1;
     padding-right: 50px;
+    padding-left: 50px;
 }
 
 /*Bilde av den første boka på venstre side på rad 2 i første kolonne i grid-layout*/
