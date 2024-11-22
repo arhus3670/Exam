@@ -166,12 +166,12 @@ header {
 
 .boks-2 li { /* bytter størrelsen og plasseringen til punktene med tekst i boks-2 */
     margin-top: 10px;
-    font-size: large;
+    font-size: 1em;
 }
 
 .boks-1 p { /* bytter størrelsen på tet i boks-1*/
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 1em;
 }
 /* slutt på tabell med informasjon */
 
