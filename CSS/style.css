@@ -673,7 +673,7 @@ footer {
 
     .footer-left, .footer-center, .footer-right {
         line-height: 1.8em;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
     .footer-right ul {
         padding: 0;
@@ -691,15 +691,22 @@ footer {
 /* starten på github siden */ 
 .github-main{
     display: grid;
+    padding: 5px;
 }
 
+/*overskriften plassert til venstre*/
+.samarbeid-1 h1{
+    text-align: left;
+}
+
+/*bilde på venstre side på første rad*/
 .samarbeid-1{
     grid-row: 1; 
     grid-column:1/2 ;
-    padding-left: 50px;
-    
+    padding-left: 50px; 
 } 
 
+/*bilde på høyre side på første rad*/
 .samarbeid-2{
     grid-row: 1; 
     grid-column:2/3 ;
@@ -707,43 +714,62 @@ footer {
     padding-right: 50px;
 }
 
+/*bilde på venstre side på andre rad*/
 .endringer-1{
     grid-row: 2; 
     grid-column: 1/2;
     padding-left: 50px;
 } 
 
+/*bilde på høyre side på andre rad*/
 .endringer-2 {
     grid-row: 2;
     grid-column: 2/3;
-    padding-top: 50px;
+    padding-top: 55px;
 }
 
+/*teksten plassert på tredje rad på venstre side*/
 .fordeler{
     grid-row:3;
     grid-column: 1/2;
-    padding-left: 50px;
-    
+    padding-left: 50px;  
 }
 
-/* Media query for mobile screens */
 @media (max-width: 768px) {
     .github-main {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Add space between items */
+        flex-direction: column; 
+        padding: 15px;
+    }
+    .samarbeid-1 h1{
+        text-align: center;
+        font-size: 1.8em;
     }
 
-    .samarbeid-1, 
-    .samarbeid-2, 
-    .endringer-1, 
-    .endringer-2, 
-    .fordeler {
-        grid-row: auto; /* Reset grid-row */
-        grid-column: auto; /* Reset grid-column */
-        padding: 10px; /* Adjust padding for smaller screens */
+    .samarbeid-1, .samarbeid-2, .endringer-1, .endringer-2, .fordeler {
+        text-align: center;
+        padding: 15px; 
+    }
+
+    .samarbeid-1 h2, .endringer-1 h2{
+        font-size: 1.2em;
+    }
+
+    .fordeler{
+        text-align: left;
+        padding: 15px;
+        font-size: 0.8em;
+    }
+
+    .github-main img {
+        width: 100%;
+        height: auto; 
     }
 }
+
+
+
+
 
 
 /* starten på github siden */ 
