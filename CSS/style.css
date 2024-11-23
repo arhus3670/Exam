@@ -627,14 +627,62 @@ h2 {
 }
 
 
+/*footer-stil med bruk av flex for å justere footer innholdet vannrett. Innholdet er jevnt fordelt utover 
+og blir plassert på midten*/
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: orange;
-    padding: 110px;
-    gap: 40px;
+    padding: 100px;
 }
+
+/*vestre del av footer med linjeavstand*/
+.footer-left{
+    line-height: 1.8em;
+}
+
+/*midterste delen av footer med linjeavstand og tekst plassering på midten*/
+.footer-center{
+    text-align: center;
+    line-height: 2em;
+}
+
+.footer-right ul {
+    line-height: 2em;
+    list-style: none;
+}
+
+/*felles styling av lenkene på footer */
+.footer-left a, .footer-center a, .footer-right a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-left a:hover, .footer-center a:hover, .footer-right a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 15px; 
+        text-align: center; 
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        line-height: 1.8em;
+        font-size: 0.9em;
+    }
+    .footer-right ul {
+        padding: 0;
+    }
+}
+
+
+
+
 
 
 
