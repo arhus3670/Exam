@@ -91,6 +91,7 @@ fra hverandre*/
         padding: 9px 9px; 
         font-size: 0.8em; 
 }
+
 } 
 /*slutt på menyknapp stil*/
 
@@ -650,7 +651,6 @@ footer {
 
 .footer-right ul {
     line-height: 2em;
-    list-style: none;
 }
 
 /*felles styling av lenkene på footer */
@@ -860,6 +860,10 @@ footer {
     padding: 0;
 }
 
+.bok-logo img{
+    height: 90px;
+}
+
 /*header-stil med bruk av flex*/
 .activity-header {
     display: flex;
@@ -884,6 +888,24 @@ footer {
 
 .activity-meny:hover{
     background-color: rgba(239, 86, 86, 0.71);
+}
+
+@media (max-width: 768px) {
+    .activity-header {
+        flex-direction: row; /* logo og meny horisonalt */
+        align-items: flex-start; /* Justerer elementer til venstre */
+        padding: 20px; 
+    }
+
+    .bok-logo img {
+        height: 60px; /* mindre logo-størrelse*/
+    }
+
+    .activity-meny {
+        font-size: 1em;
+        padding: 15px; 
+    }
+    
 }
 
 /*grid-layout med 3 kolonner og 3 rader*/
@@ -983,7 +1005,6 @@ footer {
 
 }
 
-
 /*styling av linker til lignende bøker*/
 .bøker a:link{
     text-decoration: none;
@@ -1001,8 +1022,76 @@ footer {
     color: grey;
 }  
 
-/*footer-stil*/
+
+@media (max-width: 768px) {
+
+    /* grid til en kolonne */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr; /* en kolonne */
+      grid-template-rows: auto; 
+      gap: 15px; 
+      margin: 10px; 
+    }
+  
+    /* Alle radene blir til en kolonne */
+    .rad1,.introduksjon,.bok1,.rad2,.bok2,.rad3 {
+      grid-column: 1/2;
+      grid-row: auto; 
+      padding: 10px; 
+      text-align: center; 
+    }
+
+    /*justering av bildestørrelse*/
+    .rad1 img{
+      width: 100%;;
+      height: auto; 
+    }
+  
+    .bok1 img,.bok2 img {
+      width: 100%;;
+      height: 400px; 
+    }
+  
+    .introduksjon h1 {
+      font-size: 1.5em;
+    }
+  
+    .introduksjon p {
+      font-size: 1em; 
+    }
+    /*skriftstørrelse på underoverskriftene*/
+    .rad2 h2,.lignende-bøker h3, .rad3 h4, .lignende-bøker h5{
+        font-size: 1.1em;
+    }
+  
+    /*bilde av bøkene i vanrett rekkefølge*/
+    .lignende-bøker .bøker {
+      margin: 10px; 
+      width: 25%; 
+    }
+  }
+  
+
+/*footer-stil med bruk av flex*/
 .activity-footer{
-    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
     background-color: lightcoral;
 }
+
+@media (max-width: 768px) {
+    .activity-footer { 
+      padding: 10px;
+    }
+  
+    .activity-footer p {
+      font-size: 0.6em; 
+    }
+  }
+
+
+
+
