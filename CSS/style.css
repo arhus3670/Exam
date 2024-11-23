@@ -6,6 +6,7 @@ body{
     font-family: sans-serif;
 }
 
+/*stil for header med bruk av flex for å justere elementene i header*/
 header {
     display: flex;
     justify-content: space-between;
@@ -13,16 +14,20 @@ header {
     padding: 30px; 
     background-color: orange;
 }
+
+/*logo størrelse*/
 .logo img {
     height: 90px;
 }
- 
-/*https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button*/
+
+/*stilen på dropdown-menyen*/
+/*kilde: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
-    
+ 
+/*Styling av menyknappen med bakgrunnsfarge uten ramme*/
 .meny-button {
     background-color: orange;
     padding: 20px;
@@ -31,22 +36,28 @@ header {
     cursor: pointer; 
 }
 
-.meny-button:hover{
+/*endrer bakgrunnsfarge når brukeren svever over knappen*/
+.meny-button:hover{ 
     background-color: darkorange;
 }
 
+/*dropdown-innholdet blir skjult som standard og plasserer menyen i samme posisjon i forhold til 
+dropdown-container*/
 .dropdown-content {
     display: none;
     position: absolute;
     min-width: 30%;
-    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0px 7px 15px 0px rgba(0,0,0,0.2); 
+    z-index: 1; /*menyen overlapper annet innhold*/
 }
 
+/*gjør menyen synlig når brukeren svever over menyknappen*/
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/*lenkene i dropdown-menyen blir satt inn som blokker uten noen understrek, med innvendig avstand 
+fra hverandre*/
 .dropdown-content a {
     color: black; 
     padding: 10px 15px;
@@ -55,22 +66,45 @@ header {
     background-color: white;
 }
 
+/*skifter bakgrunnsfarge når brukeren svever over en lenke*/
 .dropdown-content a:hover {
     background-color: rgb(238, 237, 237);
 }
 
-.body {
-    background-color: #000;
-}
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; /* logo og meny horisonalt */
+        align-items: flex-start; /* Justerer elementer til venstre */
+        padding: 20px; 
+    }
+
+    .logo img {
+        height: 60px; /* mindre logo-størrelse*/
+    }
+
+    .meny-button {
+        font-size: 1em;
+        padding: 15px; 
+    }
+    .dropdown-content a {
+        padding: 9px 9px; 
+        font-size: 0.8em; 
+}
+} 
+/*slutt på menyknapp stil*/
+
+
+/*bilde øverst*/
 .intro-bilde{
     width: 90%;
     margin-left: 6%;
     margin-top: 5%;
-    height: auto;;
+    height: auto;
 }
 
-.Overskrift { /* plassering av overskriften */
+/* plassering av overskriften */
+.Overskrift { 
     width: 90%;
     height: 25vh;
     margin-top: 5%;
@@ -89,7 +123,28 @@ header {
     display: flex;
 }
 
-.div1 { /* dele siden i to */
+@media (max-width: 768px) {
+    .Overskrift {
+        width: 100%;
+        height: auto;
+        text-align: center; 
+    }
+
+    .Overskrift h1 {
+        font-size: large; 
+        margin: 0 auto; 
+    }
+
+    .Overskrift p {
+        font-size: medium; 
+        margin: 5px auto; 
+        text-align: center; 
+        display: block;
+    }
+}
+
+/* deler siden i to på venstre side*/
+.div1 { 
     width: 50%;
     float: left;
     height: auto;
@@ -97,7 +152,7 @@ header {
     padding-bottom: 150px;
 } 
 
-.div2{ /* deler siden i to */
+.div2{ /* deler siden i to på høyre side*/
     width: 50% ;
     float: right;
     height: auto;
@@ -105,7 +160,7 @@ header {
     padding-bottom: 150px;
 } 
 
-.container-2 ,.container-3 ,.container-4 ,.container { 
+.container { 
     width: 70%;
     margin-left: 15%;
     display: flex;
@@ -116,7 +171,7 @@ header {
     gap: 1px;
 }
 
-.container-5 { 
+.container-2 { 
     width: 70% auto;
     margin-top: -1em;
     margin-left: 6.5em auto;
@@ -127,8 +182,7 @@ header {
     gap: 0em;
 }
 
-.box-1 ,.box-2 ,.box-3 ,.box-4 ,.box-5 ,.box-6 ,.box-7  {
-    /* Boks Modell i container 1-4 */
+.box { /* Boks Modell i container */
     width: 125px;
     min-width: 20%;
     max-width: 60%;
@@ -141,12 +195,9 @@ header {
     gap: 100px;
 }
 
-.box-1 h1,.box-2 h1,.box-3 h1,.box-4 h1,.box-5 h1,.box-6 h1,.box-7 h1 {
-    font-size: larger;
-}
 
 .boks-1 ,.boks-2 {
-    /* boks modell i container-5 */
+    /* boks modell i container-2 */
     width: 400px;
     max-width: 50%; 
     max-height: 500px;
@@ -156,12 +207,12 @@ header {
     border-top: 3px solid black;
 }
 
-.boks-1 h1 ,.boks-2 h1 { /* bytter heading størrelse og plasseringen */
+.boks-1 h2 ,.boks-2 h2 { /* bytter heading størrelse og plasseringen */
     align-self: center;
     display: flex;
     margin-left: 10%;
     margin-right: 1%;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .boks-2 li { /* bytter størrelsen og plasseringen til punktene med tekst i boks-2 */
@@ -169,60 +220,58 @@ header {
     font-size: 1em;
 }
 
-.boks-1 p { /* bytter størrelsen på tet i boks-1*/
+.boks-1 p { /* bytter størrelsen på tekst og linjeavstand i boks-1*/
     margin-top: 10px;
     font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* Media query for mobil screen */
+@media (max-width: 768px) {
+    .div1, .div2 {
+        width: 100%;
+        float: none;
+        padding: 10px 0;
+    }
+
+    /* container i kolonne layout */
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /*Justering av boksstørrelser og tekst*/
+    .box{
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        text-align: center; 
+        margin-bottom: 5px; 
+        font-size: 0.8em;
+    }
+
+    .boks-1, .boks-2 {
+        width: 50%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    /*Mindre skriftstørrlse på overskrift og tekst*/
+    .boks-1 h2, .boks-2 h2 {
+        font-size: 1em; 
+    }
+
+    .boks-2 li, .boks-1 p {
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+
 }
 /* slutt på tabell med informasjon */
-/* Default styles remain the same */
 
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-    /* Adjust boxes 1-7 */
-    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7 {
-        width: 90%; /* Take most of the screen width */
-        min-width: unset; /* Remove min-width */
-        max-width: unset; /* Remove max-width */
-        height: auto; /* Let height adjust based on content */
-        max-height: unset; /* Remove max-height */
-        padding: 15px; /* Simplify padding */
-        margin: 10px auto; /* Add spacing between boxes */
-        font-size: medium; /* Keep a readable font size */
-        gap: 10px; /* Reduce gap for better fit */
-    }
 
-    .box-1 h1, .box-2 h1, .box-3 h1, .box-4 h1, .box-5 h1, .box-6 h1, .box-7 h1 {
-        font-size: 1.2em; /* Reduce font size slightly */
-        text-align: center; /* Center the text */
-    }
-
-    /* Adjust boks-1 and boks-2 */
-    .boks-1, .boks-2 {
-        width: 90%; /* Expand to take most of the screen width */
-        max-width: unset; /* Remove max-width */
-        max-height: unset; /* Remove max-height */
-        padding: 15px; /* Adjust padding for a more compact layout */
-        margin: 15px auto; /* Center and add spacing */
-        border-top: 2px solid black; /* Slightly thinner border */
-    }
-
-    .boks-1 h1, .boks-2 h1 {
-        margin-left: 0; /* Center text on mobile */
-        margin-right: 0; /* Center text on mobile */
-        font-size: 1.2em; /* Slightly smaller font size */
-        text-align: center; /* Center align the headings */
-    }
-
-    .boks-2 li {
-        margin-top: 8px; /* Adjust spacing between list items */
-        font-size: medium; /* Slightly smaller font size for readability */
-    }
-
-    .boks-1 p {
-        font-size: 1em; /* Reduce paragraph font size for smaller screens */
-        margin-top: 8px; /* Adjust spacing */
-    }
-}
 
 .centered-text {
     text-align: center;
@@ -578,46 +627,6 @@ h2 {
 }
 
 
-
-@media (max-width: 768px) {
-    .header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .dropdown {
-        margin: 10px 0;
-    }
-
-    .Overskrift, .Underskrift {
-        font-size: 1.5em;
-    }
-
-    .ABCD {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-container {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    .button {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .Overskrift, .Underskrift {
-        font-size: 1.2em;
-    }
-
-    .text-container {
-        font-size: 14px;
-    }
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -626,6 +635,10 @@ footer {
     padding: 110px;
     gap: 40px;
 }
+
+
+
+
 
 /* starten på github siden */ 
 .github-main{
