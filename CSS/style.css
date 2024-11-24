@@ -91,7 +91,6 @@ fra hverandre*/
         padding: 9px 9px; 
         font-size: 0.8em; 
 }
-
 } 
 /*slutt på menyknapp stil*/
 
@@ -291,7 +290,7 @@ fra hverandre*/
     font-size: 16px; 
     line-height: 1.5; 
 }
-
+/* Rangserer studietprogrammet*/
 .accordion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -342,10 +341,11 @@ fra hverandre*/
     border-top: 1px solid #e0e0e0;
     font-size: 1.1rem;
     line-height: 1.6;
+    padding-left: 40px;
     
     
   }
-  
+  /* setter opp liste med punkt*/
   .accordion-content ul {
     margin: 0;
     padding-left: 20px;
@@ -362,7 +362,7 @@ fra hverandre*/
     text-decoration-color: orange;
   }
 
-
+/* formaterer tekstene */
 .text-container {
     display: flex;
     justify-content: center;
@@ -374,20 +374,6 @@ fra hverandre*/
     font-family: Arial,sans-serif;
     text-align: center;
     
-}
-
-.accordion-content {
-    padding-left: 40px;
-}
-
-.accordion-content {
-    width: 80%;
-    margin: 20px auto;
-    font-size: 1rem;
-    background-color: #FFFFFF;
-    padding: 5px 10px;
-    border: 1px solid #e0e0e0;
-  
 }
 
 .accordion-item .accordion-title {
@@ -414,13 +400,7 @@ fra hverandre*/
     font-size: 12px; 
   
 }
-
-
-
-.accordion-content {
-    padding-left: 40px;
-}
-
+/* fikser sub-innholdet som hører til en høved innhold */
 .sub-accordion-item .sub-accordion-title {
     font-size: 1rem;
     margin-top: 10px;
@@ -435,6 +415,8 @@ fra hverandre*/
     text-decoration: underline;
     text-decoration-color: orange;
 }
+/* Endrer fra +/- for lukking og åpning av innholdet*/
+
 
 .accordion-title .icon::before {
     content: '+';
@@ -458,6 +440,21 @@ input[type="checkbox"]{
     display: none;
 }
 
+
+.sub-accordion-checkbox:not(:checked) + .sub-accordion-title .icon::before {
+    content: '+';
+}
+
+
+.sub-accordion-checkbox:checked + .sub-accordion-title .icon::before {
+    content: '-';
+}
+
+
+.sub-accordion-checkbox:checked ~ .sub-accordion-content {
+    display: block;
+}
+
 .sub-accordion-title .icon {
     font-size: 1.5rem;
     background-color: orange;
@@ -472,10 +469,6 @@ input[type="checkbox"]{
     font-weight: bold;
 }
 
-
-.sub-accordion-checkbox:checked ~ .sub-accordion-content {
-    display: block;
-}
 
 .sub-accordion-content {
     display: none;
@@ -493,77 +486,47 @@ input[type="checkbox"]{
 
 
 
+/* Hovedoverskrift */
 h1 {
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Tabelloppsett */
 table {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     border-collapse: collapse;
-    margin: 20px 0;
-    table-layout: fixed;
+    background-color: #fff;
 }
 
+/* Tabellhoder */
 th, td {
-    padding: 10px;
     border: 1px solid #ddd;
+    padding: 10px;
     text-align: left;
-    word-wrap: break-word; /* Allows text to wrap within the cell */
 }
 
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
+/* Alternativ radfarge */
 tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #ddd;
-}
-
-td {
-    vertical-align: top;
-}
-
-/* Style for study year rows */
-.study-year {
     background-color: #f9f9f9;
+}
+
+/* Stiler for valgfag */
+.valgfag {
     font-weight: bold;
-    text-align: center;
+    color: #d9534f; /* Rød for valgfag */
 }
 
-/* Ensures the columns are wide enough to fit the content */
-table td, table th {
-    min-width: 150px;
-    word-wrap: break-word;
+/* Noter under tabellen */
+.note {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
 }
 
-/* Responsiveness: table becomes scrollable on smaller screens */
-@media (max-width: 768px) {
-    table {
-        width: 100%;
-        overflow-x: auto;
-        display: block;
-    }
-
-    th, td {
-        white-space: nowrap;
-    }
-}
-
-
-.sub-accordion-checkbox:not(:checked) + .sub-accordion-title .icon::before {
-    content: '+';
-}
-
-
-.sub-accordion-checkbox:checked + .sub-accordion-title .icon::before {
-    content: '-';
-}
 
 @media (max-width: 768px) {
     .header {
@@ -593,7 +556,7 @@ table td, table th {
     max-width: 1200;
     margin: 0 auto;
 }
-
+/* Redigerer tabellene både struktur og farge*/
 h1 {
     font-size: 2rem;
     margin-bottom: 10px;
@@ -628,61 +591,14 @@ h2 {
 }
 
 
-/*footer-stil med bruk av flex for å justere footer innholdet vannrett. Innholdet er jevnt fordelt utover 
-og blir plassert på midten*/
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: orange;
-    padding: 100px;
+    padding: 110px;
+    gap: 40px;
 }
-
-/*vestre del av footer med linjeavstand*/
-.footer-left{
-    line-height: 1.8em;
-}
-
-/*midterste delen av footer med linjeavstand og tekst plassering på midten*/
-.footer-center{
-    text-align: center;
-    line-height: 2em;
-}
-
-.footer-right ul {
-    line-height: 2em;
-}
-
-/*felles styling av lenkene på footer */
-.footer-left a, .footer-center a, .footer-right a{
-    text-decoration: none;
-    color: black;
-}
-
-.footer-left a:hover, .footer-center a:hover, .footer-right a:hover{
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column; 
-        align-items: center; 
-        padding: 15px; 
-        text-align: center; 
-    }
-
-    .footer-left, .footer-center, .footer-right {
-        line-height: 1.8em;
-        font-size: 0.8em;
-    }
-    .footer-right ul {
-        padding: 0;
-    }
-}
-
-
-
-
 
 
 
@@ -691,22 +607,15 @@ footer {
 /* starten på github siden */ 
 .github-main{
     display: grid;
-    padding: 5px;
 }
 
-/*overskriften plassert til venstre*/
-.samarbeid-1 h1{
-    text-align: left;
-}
-
-/*bilde på venstre side på første rad*/
 .samarbeid-1{
     grid-row: 1; 
     grid-column:1/2 ;
-    padding-left: 50px; 
+    padding-left: 50px;
+    
 } 
 
-/*bilde på høyre side på første rad*/
 .samarbeid-2{
     grid-row: 1; 
     grid-column:2/3 ;
@@ -714,62 +623,43 @@ footer {
     padding-right: 50px;
 }
 
-/*bilde på venstre side på andre rad*/
 .endringer-1{
     grid-row: 2; 
     grid-column: 1/2;
     padding-left: 50px;
 } 
 
-/*bilde på høyre side på andre rad*/
 .endringer-2 {
     grid-row: 2;
     grid-column: 2/3;
-    padding-top: 55px;
+    padding-top: 50px;
 }
 
-/*teksten plassert på tredje rad på venstre side*/
 .fordeler{
     grid-row:3;
     grid-column: 1/2;
-    padding-left: 50px;  
+    padding-left: 50px;
+    
 }
 
+/* Media query for mobile screens */
 @media (max-width: 768px) {
     .github-main {
         display: flex;
-        flex-direction: column; 
-        padding: 15px;
-    }
-    .samarbeid-1 h1{
-        text-align: center;
-        font-size: 1.8em;
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add space between items */
     }
 
-    .samarbeid-1, .samarbeid-2, .endringer-1, .endringer-2, .fordeler {
-        text-align: center;
-        padding: 15px; 
-    }
-
-    .samarbeid-1 h2, .endringer-1 h2{
-        font-size: 1.2em;
-    }
-
-    .fordeler{
-        text-align: left;
-        padding: 15px;
-        font-size: 0.8em;
-    }
-
-    .github-main img {
-        width: 100%;
-        height: auto; 
+    .samarbeid-1, 
+    .samarbeid-2, 
+    .endringer-1, 
+    .endringer-2, 
+    .fordeler {
+        grid-row: auto; /* Reset grid-row */
+        grid-column: auto; /* Reset grid-column */
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 }
-
-
-
-
 
 
 /* starten på github siden */ 
@@ -803,7 +693,7 @@ footer {
     padding-top: 50px;
 }
 
-.accessibility{
+.fordeler{
     grid-row:3;
     grid-column: 1/2;
     padding-left: 50px;
@@ -813,41 +703,8 @@ footer {
 @media (max-width: 768px) {
     .accessibility-grid {
         display: flex;
-        flex-direction: column; 
-        padding: 15px;
-    }
-    .test-1 h1{
-        text-align: center;
-        font-size: 1.8em;
-    }
-
-    .test-1, .test-2, .code-1, .code-2, .fordeler {
-        text-align: center;
-        padding: 15px; 
-    }
-
-    .tekst-1 h2, .code-1 h2{
-        font-size: 1.2em;
-    }
-
-    .accessibility{
-        text-align: left;
-        padding: 15px;
-        font-size: 0.8em;
-    }
-
-    .accessibility-grid img {
-        width: 100%;
-        height: auto; 
-    }
-}
-
-
-@media (max-width: 768px) {
-    .access-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 20px; 
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add space between items */
     }
 
     .test-1, 
@@ -893,10 +750,6 @@ footer {
     padding: 0;
 }
 
-.bok-logo img{
-    height: 90px;
-}
-
 /*header-stil med bruk av flex*/
 .activity-header {
     display: flex;
@@ -921,24 +774,6 @@ footer {
 
 .activity-meny:hover{
     background-color: rgba(239, 86, 86, 0.71);
-}
-
-@media (max-width: 768px) {
-    .activity-header {
-        flex-direction: row; /* logo og meny horisonalt */
-        align-items: flex-start; /* Justerer elementer til venstre */
-        padding: 20px; 
-    }
-
-    .bok-logo img {
-        height: 60px; /* mindre logo-størrelse*/
-    }
-
-    .activity-meny {
-        font-size: 1em;
-        padding: 15px; 
-    }
-    
 }
 
 /*grid-layout med 3 kolonner og 3 rader*/
@@ -1038,6 +873,7 @@ footer {
 
 }
 
+
 /*styling av linker til lignende bøker*/
 .bøker a:link{
     text-decoration: none;
@@ -1055,76 +891,8 @@ footer {
     color: grey;
 }  
 
-
-@media (max-width: 768px) {
-
-    /* grid til en kolonne */
-    .main-grid {
-      display: grid;
-      grid-template-columns: 1fr; /* en kolonne */
-      grid-template-rows: auto; 
-      gap: 15px; 
-      margin: 10px; 
-    }
-  
-    /* Alle radene blir til en kolonne */
-    .rad1,.introduksjon,.bok1,.rad2,.bok2,.rad3 {
-      grid-column: 1/2;
-      grid-row: auto; 
-      padding: 10px; 
-      text-align: center; 
-    }
-
-    /*justering av bildestørrelse*/
-    .rad1 img{
-      width: 100%;;
-      height: auto; 
-    }
-  
-    .bok1 img,.bok2 img {
-      width: 100%;;
-      height: 500px; 
-    }
-  
-    .introduksjon h1 {
-      font-size: 1.5em;
-    }
-  
-    .introduksjon p {
-      font-size: 1em; 
-    }
-    /*skriftstørrelse på underoverskriftene*/
-    .rad2 h2,.lignende-bøker h3, .rad3 h4, .lignende-bøker h5{
-        font-size: 1.1em;
-    }
-  
-    /*bilde av bøkene i vanrett rekkefølge*/
-    .lignende-bøker .bøker {  
-      margin: 10px; 
-      width: 25%; 
-    }
-  }
-  
-
-/*footer-stil med bruk av flex*/
+/*footer-stil*/
 .activity-footer{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px;
+    padding: 50px;
     background-color: lightcoral;
 }
-
-@media (max-width: 768px) {
-    .activity-footer { 
-      padding: 10px;
-    }
-  
-    .activity-footer p {
-      font-size: 0.6em; 
-    }
-  }
-
-
-
-
