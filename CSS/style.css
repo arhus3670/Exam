@@ -293,14 +293,16 @@ fra hverandre*/
 /* Rangserer studietprogrammet*/
 .accordion {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-row: 2;
+    grid-column:2;
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     margin: auto;
     font-family: Arial, sans-ser
   }
-  .accordion-item {
+  .accordion-item1, .accordion-item2, .accordion-item3, .accordion-item4, .accordion-item5, .accordion-item6,
+  .accordion-item7, .accordion-item8 {
     border-top: 1px solid #e0e0e0;
     flex: 1 1 calc(50% - 10px); 
     border: 1px solid #e0e0e0;
@@ -312,6 +314,44 @@ fra hverandre*/
     border-radius: 5px;
     
   }
+
+  .accordion-item1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .accordion-item2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .accordion-item3{
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  .accordion-item4{
+    grid-row: 3/4; 
+    grid-column: 1/2;
+  }
+
+  .accordion-item5{
+    grid-row:3/4;
+    grid-column: 2/3;
+  }
+
+  .accordion-item6{
+    grid-row:4/5;
+    grid-column: 1/2;
+
+  }
+  .accordion-item7{
+    grid-row:4/5;
+    grid-column: 2/3
+  }
+  .accordion-item8{
+    grid-row:5/6;
+    grid-column: 1/2;
+  }
+
+
   .accordion-title {
     display: flex;
     align-items: center;
@@ -486,70 +526,50 @@ input[type="checkbox"]{
 
 
 
-/* Hovedoverskrift */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 /* Tabelloppsett */
 table {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     border-collapse: collapse;
-    background-color: #fff;
+    margin: 20px 0;
+    table-layout: fixed;
+    font-size:0.6em;
+   
 }
 
-/* Tabellhoder */
-th, td {
-    border: 1px solid #ddd;
+table, th, td {
     padding: 10px;
+    border: 1px solid #ddd;
     text-align: left;
 }
 
-/* Alternativ radfarge */
+th {
+    background-color: orange;
+    color: white;
+}
+
 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    vertical-align: top;
+}
+
+/* Style for study year rows */
+.study-year {
     background-color: #f9f9f9;
-}
-
-/* Stiler for valgfag */
-.valgfag {
     font-weight: bold;
-    color: #d9534f; /* Rød for valgfag */
+    text-align: center;
 }
 
-/* Noter under tabellen */
-.note {
-    width: 90%;
-    margin: 20px auto;
-    font-size: 0.9em;
-    color: #555;
-    text-align: left;
-}
-
-
-@media (max-width: 768px) {
-    .header {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .dropdown {
-        margin: 10px 0;
-    }
-
-    .Overskrift, .Underskrift {
-        font-size: 1.5em;
-    }
-
-    .ABCD {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .text-container {
-        font-size: 16px;
-    }
+/* Ensures the columns are wide enough to fit the content */
+table td, table th {
+    min-width: 100%;
+    word-wrap: break-word;
 }
 
 .container {
@@ -591,14 +611,60 @@ h2 {
 }
 
 
+
+/*footer-stil med bruk av flex for å justere footer innholdet vannrett. Innholdet er jevnt fordelt utover 
+og blir plassert på midten*/
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: orange;
-    padding: 110px;
-    gap: 40px;
+    padding: 100px;
 }
+
+/*vestre del av footer med linjeavstand*/
+.footer-left{
+    line-height: 1.8em;
+}
+
+/*midterste delen av footer med linjeavstand og tekst plassering på midten*/
+.footer-center{
+    text-align: center;
+    line-height: 2em;
+}
+
+.footer-right ul {
+    line-height: 2em;
+}
+
+/*felles styling av lenkene på footer */
+.footer-left a, .footer-center a, .footer-right a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-left a:hover, .footer-center a:hover, .footer-right a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 15px; 
+        text-align: center; 
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        line-height: 1.8em;
+        font-size: 0.8em;
+    }
+    .footer-right ul {
+        padding: 0;
+    }
+}
+
+
 
 
 
@@ -607,15 +673,22 @@ footer {
 /* starten på github siden */ 
 .github-main{
     display: grid;
+    padding: 5px;
 }
 
+/*overskriften plassert til venstre*/
+.samarbeid-1 h1{
+    text-align: left;
+}
+
+/*bilde på venstre side på første rad*/
 .samarbeid-1{
     grid-row: 1; 
     grid-column:1/2 ;
-    padding-left: 50px;
-    
+    padding-left: 50px; 
 } 
 
+/*bilde på høyre side på første rad*/
 .samarbeid-2{
     grid-row: 1; 
     grid-column:2/3 ;
@@ -623,43 +696,69 @@ footer {
     padding-right: 50px;
 }
 
+/*bilde på venstre side på andre rad*/
 .endringer-1{
     grid-row: 2; 
     grid-column: 1/2;
     padding-left: 50px;
 } 
 
+/*bilde på høyre side på andre rad*/
 .endringer-2 {
     grid-row: 2;
     grid-column: 2/3;
-    padding-top: 50px;
+    padding-top: 55px;
 }
 
+/*teksten plassert på tredje rad på venstre side*/
 .fordeler{
     grid-row:3;
     grid-column: 1/2;
-    padding-left: 50px;
-    
+    padding-left: 50px;  
 }
 
-/* Media query for mobile screens */
 @media (max-width: 768px) {
     .github-main {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Add space between items */
+        flex-direction: column; 
+        padding: 15px;
+    }
+    .samarbeid-1 h1{
+        text-align: center;
+        font-size: 1.8em;
     }
 
-    .samarbeid-1, 
-    .samarbeid-2, 
-    .endringer-1, 
-    .endringer-2, 
-    .fordeler {
-        grid-row: auto; /* Reset grid-row */
-        grid-column: auto; /* Reset grid-column */
-        padding: 10px; /* Adjust padding for smaller screens */
+    .samarbeid-1, .samarbeid-2, .endringer-1, .endringer-2, .fordeler {
+        text-align: center;
+        padding: 15px; 
+    }
+
+    .samarbeid-1 h2, .endringer-1 h2{
+        font-size: 1.2em;
+    }
+
+    .fordeler{
+        text-align: left;
+        padding: 15px;
+        font-size: 0.8em;
+    }
+
+    .github-main img {
+        width: 100%;
+        height: auto; 
     }
 }
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 /* starten på github siden */ 
@@ -735,19 +834,15 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
 /*Starten på acitivity siden*/
 .activity-body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.bok-logo img{
+    height: 90px;
 }
 
 /*header-stil med bruk av flex*/
@@ -774,6 +869,24 @@ footer {
 
 .activity-meny:hover{
     background-color: rgba(239, 86, 86, 0.71);
+}
+
+@media (max-width: 768px) {
+    .activity-header {
+        flex-direction: row; /* logo og meny horisonalt */
+        align-items: flex-start; /* Justerer elementer til venstre */
+        padding: 20px; 
+    }
+
+    .bok-logo img {
+        height: 60px; /* mindre logo-størrelse*/
+    }
+
+    .activity-meny {
+        font-size: 1em;
+        padding: 15px; 
+    }
+    
 }
 
 /*grid-layout med 3 kolonner og 3 rader*/
@@ -873,7 +986,6 @@ footer {
 
 }
 
-
 /*styling av linker til lignende bøker*/
 .bøker a:link{
     text-decoration: none;
@@ -891,8 +1003,72 @@ footer {
     color: grey;
 }  
 
-/*footer-stil*/
+
+@media (max-width: 768px) {
+
+    /* grid til en kolonne */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr; /* en kolonne */
+      grid-template-rows: auto; 
+      gap: 15px; 
+      margin: 10px; 
+    }
+  
+    /* Alle radene blir til en kolonne */
+    .rad1,.introduksjon,.bok1,.rad2,.bok2,.rad3 {
+      grid-column: 1/2;
+      grid-row: auto; 
+      padding: 10px; 
+      text-align: center; 
+    }
+
+    /*justering av bildestørrelse*/
+    .rad1 img{
+      width: 100%;;
+      height: auto; 
+    }
+  
+    .bok1 img,.bok2 img {
+      width: 100%;;
+      height: 500px; 
+    }
+  
+    .introduksjon h1 {
+      font-size: 1.5em;
+    }
+  
+    .introduksjon p {
+      font-size: 1em; 
+    }
+    /*skriftstørrelse på underoverskriftene*/
+    .rad2 h2,.lignende-bøker h3, .rad3 h4, .lignende-bøker h5{
+        font-size: 1.1em;
+    }
+  
+    /*bilde av bøkene i vanrett rekkefølge*/
+    .lignende-bøker .bøker {
+      margin: 10px; 
+      width: 25%; 
+    }
+  }
+  
+
+/*footer-stil med bruk av flex*/
 .activity-footer{
-    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
     background-color: lightcoral;
 }
+
+@media (max-width: 768px) {
+    .activity-footer { 
+      padding: 10px;
+    }
+  
+    .activity-footer p {
+      font-size: 0.6em; 
+    }
+  }

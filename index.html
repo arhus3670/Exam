@@ -106,7 +106,7 @@
     <div class="centered-text">
     </div>
   <div class="accordion">
-    <div class="accordion-item">
+    <div class="accordion-item1">
       <input type="checkbox" id="item1" class="accordion-checkbox">
       <label for="item1" class="accordion-title">
           <span class="icon"></span> Opptakskrav og poeng
@@ -128,7 +128,7 @@
         </ul>
       </div>
     </div>
-    <div class="accordion-item">
+    <div class="accordion-item2">
       <input type="checkbox" id="item2" class="accordion-checkbox">
       <label for="item2" class="accordion-title">
           <span class="icon"></span> Hva lærer du
@@ -180,332 +180,159 @@
     <p><a href="https://student.oslomet.no" class="program-link">Se programplan på student.oslomet.no</a></p>
   </div>
 </div>
-  <div class="accordion-item">
+  <div class="accordion-item3">
     <input type="checkbox" id="item3" class="accordion-checkbox">
     <label for="item3" class="accordion-title">
       <span class="icon"></span> Studiets oppbygging
     </label>
       <div class="accordion-content">
          <div class="container">
-          <h1>Studieoversikt</h1>
-         
-    <table>
-      <tr>
-          <th>Studieår/Semester</th>
-          <th>Emne</th>
-          <th>Kode</th>
-          <th>Stp.</th>
-      </tr>
-      <!-- 1. studieår -->
-      <tr>
-          <td>1. studieår - 1. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">Diskret matematikk </a></td>
-          <td>DAPE1300</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>1. studieår - 1. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">Programmering</a></td>
-          <td>DAPE1400</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>1. studieår - 1. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA1100/2024/H%C3%98ST">Teknologi og samfunn for programmerere</a></td>
-          <td>DATA1100</td>
-          <td>5</td>
-      </tr>
-      <tr>
-          <td>1. studieår - 1. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO1100/2024/H%C3%98ST">Innføring i modeller og beregninger</a></td>
-          <td>MAMO1100</td>
-          <td>5</td>
-      </tr>
-      <tr>
-          <td>1. studieår - 2. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST">Matematikk 1000</a></td>
-          <td>DAFE1000</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>1. studieår - 2. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE2101/2024/H%C3%98ST">Fysikk og kjemi</a></td>
-          <td>DAPE2101</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>1. studieår - 2. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA1500/2024/H%C3%98ST">Databaser</a></td>
-          <td>DATA1500</td>
-          <td>10</td>
-      </tr>
+    <table class="course-table">
+      <thead>
+        <tr>
+            <th>Studieår</th>
+            <th>Semester</th>
+            <th colspan="5">Emne</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- 1. studieår -->
+        <tr>
+            <td rowspan="2" class="study-year">1. Studieår</td>
+            <td>1. Semester</td>
+            <td><strong>Diskret matematikk</strong><br> DAPE1300 <br>10 stp.</td>
+            <td><strong>Programmering</strong><br>DAPE1400<br> 10 stp.</td>
+            <td><strong>Teknologi og samfunn for programmerere</strong><br>DATA1100<br>5 stp.</td>
+            <td><strong>Innføring i modeller og beregninger</strong><br>MAMO1100<br>5 stp.</td>
+        </tr>
+        <tr>
+            <td>2. semester</td>
+            <td><strong>Matematikk 1000</strong><br>DAFE1000<br>5 stp.</td>
+            <td><strong>Fysikk og kjemi</strong><br>DAPE2101<br>10 stp.</td>
+            <td><strong>Databaser</strong><br>DATA1500<br>10 stp.</td>
+        </tr>
+      
 
-      <!-- 2. studieår -->
-      <tr>
-          <td>2. studieår - 3. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAPE2000/2024/H%C3%98ST">Matematikk 2000 med statistikk </a></td>
-          <td>DAPE2000</td>
-          <td>10</td>
+        <!-- 2. studieår -->
+        <tr>
+            <td rowspan="4" class="study-year">2. Studieår</td>
+            <td>3. Semester</td>
+            <td><strong>Matematikk 2000 med statistikk</strong><br>DAPE2000<br>10 stp.</td>
+            <td><strong>Moderne fysikk</strong><br>MAMO2100<br>10 stp.</td>
+        </tr>
+        <tr>
+          <td>Emnegruppe:Matematikk og fysikk</td>
+          <td><strong>Lineær algebra og introduksjon til gruppeteori</strong><br>MAMO2300<br>10 stp.</td>
+        </tr>
+        <tr>
+          <td>Emnegruppe:Statistiske og datadrevne metoder</td>
+          <td><strong>Algoritmer og datastrukturer</strong><br>DATS2300<br>10 stp.</td>
+        </tr>
+        <tr>
+          <td>Emnegruppe:Vitenskapelige beregninger</td>
+          <td><strong>Matematikk 2000 med statistikk</strong><br>DAPE2000<br>10 stp.</td>
+          <td><strong>Algoritmer og datastrukturer</strong><br>DATS2300<br>10 stp.</td>
+        </tr>
+  
+
+        <tr>
+          <td rowspan="4" class="study-year">2. Studieår</td>
+          <td>4. Semester</td>
+          <td><strong>Matematikk 4000</strong><br>DAVE3705<br>10 stp.</td>
+        </tr>
+        <tr>
+          <td>Emnegruppe:Matematikk og fysikk</td>
+          <td><strong>Termodynamikk og statistisk fysikk</strong><br>MAMO2400<br>10 stp.</td>
+          <td><strong>Symmetrier og algebraiske strukturer</strong><br>MAMO2500<br>10 stp.</td>
+        </tr>
+        
+        <tr>
+          <td>Emnegruppe:Statistiske og datadrevne metoder</td>
+          <td><strong>Statistisk analyse</strong><br>MAMO3100<br>10 stp.</td>
+          <td><strong>Visualisering</strong><br>ADSE3200<br>10 stp.</td>
+          <td><strong>Avansert modellering og beregninger</strong><br>MAMO2200<br>10 stp.</td>
+        </tr>
+        <tr>
+          <td>Emnegruppe:Vitenskapelige beregninger</td>
+          <td><strong>Ressurseffektive programmer</strong><br>DAVE3606<br>10 stp.</td>
+          <td><strong>Avansert modellering og beregninger</strong><br>MAMO2200<br>10 stp.</td>
+        </tr>
       </tr>
       <tr>
-          <td>2. studieår - 3. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2100/2024/H%C3%98ST">Moderne fysikk </a></td>
-          <td>MAMO2100</td>
-          <td>10</td>
+      
+      
+
+        <!-- 3. studieår -->
+        <tr>
+            <td rowspan="4" class="study-year">3. Studieår</td>
+            <td>5. Semester</td>
+            <td><strong>Matematikk 3000</strong><br>DAVE3700<br>10 stp.</td>
+          <td><strong></strong><br><br>10 stp.</td>
+        </tr>
+        <tr>
+          <td>Emnegruppe:Matematikk og fysikk</td>
+          <td><strong>Reell analyse</strong><br>MAMO3300<br>10 stp.</td>
+          <td><strong>Introduksjon til IT-forskning</strong><br>DATA3730<br>10 stp.</td>
+          <td><strong>Introduction to Data Science with Scripting</strong><br>DATA3800<br>10 stp.</td>
+          <td><strong>Datasikkerhet</strong><br>ITPE3100<br>10 stp.</td>
+          <td><strong>Simulering og visualisering</strong><br>MAMO3200<br>10 stp.</td>
+        </tr>
+        
+        <tr>
+          <td>Emnegruppe:Statistiske og datadrevne metoder</td>
+          <td><strong>Introduksjon til Kunstig Intelligens</strong><br>DAVE3625<br>10 stp.</td>
+          <td><strong>Introduksjon til IT-forskning</strong><br>DATA3730<br>10 stp.</td>
+          <td><strong>Anvendt kunstig intelligens og data science prosjekt</strong><br>DATA3750<br>10 stp.</td>
+          <td><strong>Datasikkerhet</strong><br>ITPE3100<br>10 stp.</td>
+          <td><strong>Simulering og visualisering</strong><br>MAMO3200<br>10 stp.</td>
+        </tr>
+        <tr>
+          <td>Emnegruppe:Vitenskapelige beregninger</td>
+          <td><strong>Simulering og visualisering</strong><br>MAMO3200<br>10 stp.</td>
+          <td><strong>Introduksjon til IT-forskning</strong><br>DATA3730<br>10 stp.</td>
+          <td><strong>Datasikkerhet</strong><br>ITPE3100<br>10 stp.</td>
+          <td><strong>Lineær algebra og introduksjon til gruppeteori</strong><br>MAMO2300<br>10 stp.</td>
+          <td><strong>Reell analyse</strong><br>MAMO3300<br>10 stp.</td>
+        </tr>
       </tr>
       <tr>
-          <td>2. studieår - 4. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAVE3705/2024/H%C3%98ST">Matematikk 4000 </a></td>
-          <td>DAVE3705</td>
-          <td>10</td>
-      </tr>
+      
+          <tr>
+              <td rowspan="4" class="study-year">3. Studieår</td>
+              <td>6. Semester</td>
+              <td><strong>Bacheloroppgave</strong><br>DATA3900<br>20 stp.</td>
+          </tr>
+          <tr>
+            <td>Emnegruppe:Matematikk og fysikk</td>
+            <td><strong>Testing av programvare</strong><br>ADTS2310<br>10 stp.</td>
+            <td><strong>Datanettverk og skytjenester</strong><br>DATA2410<br>10 stp.</td>
+            <td><strong>Ressurseffektive programmer</strong><br>DAVE3606<br>10 stp.</td>
+            <td><strong>Avansert modellering og beregninger</strong><br>MAMO2200<br>10 stp.</td>
+          </tr>
+          
+          <tr>
+            <td>Emnegruppe:Statistiske og datadrevne metoder</td>
+            <td><strong>Testing av programvare</strong><br>ADTS2310<br>10 stp.</td>
+            <td><strong>Datanettverk og skytjenester</strong><br>DATA2410<br>10 stp.</td>
+            <td><strong>Ressurseffektive programmer</strong><br>DAVE3606<br>10 stp.</td>
+          </tr>
+          <tr>
+            <td>Emnegruppe:Vitenskapelige beregninger</td>
+            <td><strong>Visualisering</strong><br>ADSE3200<br>10 stp.</td>
+            <td><strong>Testing av programvare</strong><br>ADTS2310<br>10 stp.</td>
+            <td><strong>Datanettverk og skytjenester</strong><br>DATA2410<br>10 stp.</td>
+            <td><strong>Symmetrier og algebraiske strukturer</strong><br>MAMO2500<br>10 stp.</td>
+          </tr>
+        </tr>
+        <tr>   
+     
 
-      <!-- Emnegruppe: Matematikk og fysikk -->
-      <tr>
-          <td>Emnegruppe: Matematikk og fysikk - 3. semester</td>
-          <td><a href ="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori </a></td>
-          <td>MAMO2300</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>Emnegruppe: Matematikk og fysikk - 4. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST">Termodynamikk og statistisk fysikk</a></td>
-          <td>MAMO2400</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>Emnegruppe: Matematikk og fysikk - 4. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer</a></td>
-          <td>MAMO2500</td>
-          <td>10</td>
-      </tr>
-
-      <!-- Emnegruppe: Statistiske og datadrevne metoder -->
-      <tr>
-          <td>Emnegruppe: Statistiske og datadrevne metoder - 3. semester</td>
-          <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a></td>
-          <td>DATS2300</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>Emnegruppe: Statistiske og datadrevne metoder - 4. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST">Statistisk analyse</a></td>
-          <td>MAMO3100</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>Emnegruppe: Statistiske og datadrevne metoder - 4. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering </a></td>
-          <td>ADSE3200</td>
-          <td>10</td>
-      </tr>
-      <tr>
-        <td>Emnegruppe: Statistiske og datadrevne metoder - 4. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger <span class="valgfag">*</span> </a></td>
-        <td>MAMO2200</td>
-        <td>10</td>
-    </tr>
-    <tr>
-      <td>Emnegruppe: Vitenskapelige beregninger - 3. semester</td>
-      <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer og datastrukturer</a></td>
-      <td>DATS2300</td>
-      <td>10</td>
-  </tr>
-  <td>Emnegruppe: Vitenskapelige beregninger - 4. semester</td>
-      <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">
-        Ressurseffektive programmer</a></td>
-      <td>DAVE3606</td>
-      <td>10</td>
-  </tr>
-  <td>Emnegruppe: Vitenskapelige beregninger - 4. semester</td>
-      <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert modellering og beregninger</a></td>
-      <td>MAMO2200</td>
-      <td>10</td>
-  </tr>
-
-      <!-- 3. studieår -->
-      <tr>
-          <td>3. studieår - 5. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAVE3700/2024/H%C3%98ST">Matematikk 3000 </a></td>
-          <td>DAVE3700</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>3. studieår - 6. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA3900/2024/H%C3%98ST">Bacheloroppgave </a></td>
-          <td>DATA3900</td>
-          <td>20</td>
-      </tr>
-
-      <!-- Valgbare fag -->
-      <tr>
-        <td>Emnegruppe: Matematikk og fysikk- 5. semester </td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST"> Reell analyse </a></td>
-        <td>DAVE3625</td>
-        <td>10</td>
-    </tr>
-    <tr>
-      <td>Emnegruppe: Matematikk og fysikk- 5. semester </td>
-      <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til Kunstig Intelligens </a></td>
-      <td>DAVE3625</td>
-      <td>10</td>
-  </tr>
-      <tr>
-         
-          <td>Emnegruppe: Matematikk og fysikk- 5. semester. </td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST">Introduction to Data Science with Scripting <span class="valgfag">*</span></a></td>
-          <td>DATA3800</td>
-          <td>10</td>
-      </tr>
-      <tr>
-         <td>Emnegruppe: Matematikk og fysikk- 5. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet<span class="valgfag">*</span></a></td>
-          <td>ITPE3100</td>
-          <td>10</td>
-      </tr>
-      <tr>
-          <td>Emnegruppe: Matematikk og fysikk- 5. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering <span class="valgfag">*</span></a></td>
-          <td>DATA3800</td>
-          <td>10</td>
-      </tr>
-      <tr>
-
-          <td>Emnegruppe: Matematikk og fysikk- 6. semester</td>
-          <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare <span class="valgfag">*</span></a></td>
-          <td>ADTS2310</td>
-          <td>10</td>
-      </tr>
-
-    <!-- 6. semester -->
-    <tr>
-        <td>Emnegruppe: Matematikk og fysikk- 6. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare <span class="valgfag">*</span> </a></td>
-        <td>ADTS2310</td>
-        <td>10</td>
-    </tr>
-    
-    <!-- Emnegruppe: Statistiske og datadrevne metoder -->
-    <tr>
-        <td>Emnegruppe: Statistiske og datadrevne metoder - 5. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til Kunstig Intelligens <span class="valgfag">*</span></a></td>
-        <td>DAVE3625</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>Emnegruppe: Statistiske og datadrevne metoder - 5. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning <span class="valgfag">*</span></a></td>
-        <td>DATA3730</td>
-        <td>10</td>
-    </tr>
-    <tr>
-
-      <tr>
-        <td>Emnegruppe: Statistiske og datadrevne metoder - 5. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST">Anvendt kunstig intelligens og data science prosjekt <span class="valgfag">*</span></a></td>
-        <td>DATA3750</td>
-        <td>10</td>
-    </tr>
-        <td>Emnegruppe: Statistiske og datadrevne metoder - 5. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet<span class="valgfag">*</span></a></td>
-        <td>ITPE3100</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>Emnegruppe: Statistiske og datadrevne metoder - 5. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering <span class="valgfag">*</span></a></td>
-        <td>MAMO3200</td>
-        <td>10</td>
-    </tr>
-<!-- Emnegruppe: Statistiske og datadrevne metoder -->
-    
-    <tr>
-      <td>Emnegruppe: Statistiske og datadrevne metoder - 6. semester</td>
-      <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare</a></td>
-      <td>ADTS2310</td>
-      <td>10</td>
-  </tr>
-
-  <tr>
-    <td>Emnegruppe: Vitenskapelige beregninger - 6. semester</td>
-    <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester <span class="valgfag">*</span></a></td>
-    <td>DATA2410</td>
-    <td>10</td>
-</tr>
-
-<tr>
-  <td>Emnegruppe: Vitenskapelige beregninger - 6. semester</td>
-  <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive programmer <span class="valgfag">*</span></a></td>
-  <td>DAVE3606</td>
-  <td>10</td>
-</tr>
-
-<!-- Emnegruppe: Vitenskapelige beregninger -->
-
-  <td>Emnegruppe: Vitenskapelige beregninger - 5. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering og visualisering </a></td>
-        <td>MAMO3200</td>
-        <td>10</td>
-    </tr>
-    <tr>
-      <td>Emnegruppe: Vitenskapelige beregninger - 5. semester</td>
-      <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon til IT-forskning <span class="valgfag">*</span></a></td>
-      <td>DATA3730</td>
-      <td>10</td>
-  </tr>
-
-  <tr>
-    <td>Emnegruppe: Vitenskapelige beregninger - 5. semester</td>
-    <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet<span class="valgfag">*</span></a></td>
-    <td>ITPE3100</td>
-    <td>10</td>
-</tr>
-
-<tr>
-  <td>Emnegruppe: Vitenskapelige beregninger - 5. semester</td>
-  <td><a href ="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær algebra og introduksjon til gruppeteori <span class="valgfag">*</span></a></td>
-  <td>MAMO2300</td>
-  <td>10</td>
-</tr>
-
-<tr>
-  <td>Emnegruppe: Vitenskapelige beregninger- 5. semester </td>
-  <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST"> Reell analyse <span class="valgfag">*</span></a></td>
-  <td>DAVE3625</td>
-  <td>10</td>
-</tr>
- <!-- Emnegruppe: Vitenskapelige beregninger -->
-    <tr>
-        <td>Emnegruppe: Vitenskapelige beregninger - 6. semester</td>
-        <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering </a></td>
-        <td>ADSE3200</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>Emnegruppe: Vitenskapelige beregninger - 6. semester</td>
-        <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing av programvare <span class="valgfag">*</span></a></td>
-        <td>ADTS2310</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>Emnegruppe: Vitenskapelige beregninger - 6. semester</td>
-        <td> <a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk og skytjenester <span class="valgfag">*</span></a></td>
-        <td>DATA2410</td>
-        <td>10</td>
-    </tr>
-    <tr>
-        <td>Emnegruppe: Vitenskapelige beregninger - 6. semester</td>
-        <td><a href="https://student.oslomet.no/en/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier og algebraiske strukturer <span class="valgfag">*</span></a></td>
-        <td>MAMO2500</td>
-        <td>10</td>
-
+    </tbody>
   </table>
-
-  <p class="note">* Valgfag</p>
           </div>
           </div>
     </div>
-    <div class="accordion-item">
+    <div class="accordion-item4">
       <input type="checkbox" id="item4" class="accordion-checkbox">
       <label for="item4" class="accordion-title">
           <span class="icon"></span> Hvordan foregår undervisningen?
@@ -525,7 +352,7 @@
         <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.</p>
       </div>
     </div>
-    <div class="accordion-item">
+    <div class="accordion-item5">
       <input type="checkbox" id="item5" class="accordion-checkbox">
       <label for="item5" class="accordion-title">
           <span class="icon"></span> Hva koster det?
@@ -538,7 +365,7 @@
         <b><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos" class="custom-link">studieavgift (student.oslomet.no). </a></b> <p> Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
       </div>
     </div>
-    <div class="accordion-item">
+    <div class="accordion-item6">
       <input type="checkbox" id="item6" class="accordion-checkbox">
       <label for="item6" class="accordion-title">
           <span class="icon"></span> Hva kan du jobbe som?
@@ -551,7 +378,7 @@
         <p>Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping. Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.</p>
       </div>
     </div>
-    <div class="accordion-item">
+    <div class="accordion-item7">
       <input type="checkbox" id="item7" class="accordion-checkbox">
       <label for="item7" class="accordion-title">
           <span class="icon"></span> Utveksling?
@@ -560,7 +387,7 @@
         <p>Du kan dra på utveksling i femte semester.</p>
       </div>
     </div>
-    <div class="accordion-item">
+    <div class="accordion-item8">
       <input type="checkbox" id="item9" class="accordion-checkbox">
       <label for="item9" class="accordion-title">
           <span class="icon"></span> Videre studiemuligheter ved OsloMet
@@ -574,17 +401,35 @@
   </div>
   </main>
     
-    <footer>
-      <div class="footer-left">
-          <p>OSLO METROPOLITAN UNIVERSITY <br> STORBYUNIVERSITETET</p>
-      </div>
-      <div class="footer-center">
-          <p> Mer informasjon </p>   
-      </div>
-      <div class="footer-right">
-          <p>Sosiale medier lenker</p>
-      </div>
-  </footer>
+  <footer>
+    <div class="footer-left">
+        <p><strong>OSLO METROPOLITAN UNIVERSITY <br> 
+          STORBYUNIVERSITETET</strong><br>
+          Postboks 4, St. Olavs plass<br>
+          0130 Oslo<br>
+          Tlf: 67 23 50 00 <br>
+        <a href="https://www.oslomet.no/om/kontakt">Kontakt oss</a>
+        </p>
+    </div>
+    <div class="footer-center">
+      <p>
+        <a href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a><br>
+        <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a><br>
+        <a href="https://www.oslomet.no/om/for-studenter">For studenter</a><br>
+        <a href="https://www.oslomet.no/om/ledige-stillinger">Ledige stillinger</a><br>
+        <a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring og informasjonskapslar</a>
+      </p>      
+    </div>
+    <div class="footer-right">
+      <ul>
+        <li><a href="https://www.facebook.com/oslomet/">Facebook</a></li>
+        <li><a href="https://x.com/oslomet">X (Twitter)</a></li>
+        <li><a href="https://no.linkedin.com/school/oslomet/">LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/oslomet/?hl=nb">Instagram</a></li>
+      </ul>
+    </div>
+</footer>
+
 
 </body>
 </html>
