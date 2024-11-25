@@ -115,6 +115,7 @@ fra hverandre*/
 
 .Overskrift h1 { /* bytter på størrelsen av headingen */
     font-size: xx-large;
+    text-align: center; 
 }
 
 .Overskrift p { /* bytter på størrelsen og plasseringen av paragrafen */
