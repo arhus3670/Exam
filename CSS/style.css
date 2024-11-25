@@ -343,8 +343,8 @@ fra hverandre*/
     .accordion-item6,.accordion-item7, .accordion-item8 {
         min-height: auto; 
     }
-}
 
+  }
 
   .accordion-title {
     display: flex;
@@ -623,13 +623,13 @@ table td, table th {
 }
 
 /* Redigerer tabellene både struktur og farge*/
-h1 {
+h3 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: #2d2d2d;
 }
 
-h2 {
+h4 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #2d2d2d;
@@ -644,7 +644,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-h1, h2 {
+h3, h4 {
     color: #000;
 }
 a {
