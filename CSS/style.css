@@ -271,25 +271,6 @@ fra hverandre*/
 }
 /* slutt på tabell med informasjon */
 
-
-
-.centered-text {
-    text-align: center;
-    font-size: 18px; 
-    line-height: 1.5; 
-    margin: 0;
-    padding: 0;
-    color: #333; 
-}
-.line-break {
-    display: block;
-}
-.description {
-    margin-bottom: 20px; 
-    text-align:left; 
-    font-size: 16px; 
-    line-height: 1.5; 
-}
 /* Rangserer studietprogrammet*/
 .accordion {
     display: grid;
@@ -350,6 +331,19 @@ fra hverandre*/
     grid-row:5/6;
     grid-column: 1/2;
   }
+
+  @media (max-width: 768px) {
+    .accordion {
+        display: flex;
+        flex-direction: column; /* Én kolonne */
+        grid-gap: 10px; /* Mindre avstand */
+    }
+
+    .accordion-item1, .accordion-item2, .accordion-item3, .accordion-item4, .accordion-item5, 
+    .accordion-item6,.accordion-item7, .accordion-item8 {
+        min-height: auto; 
+    }
+}
 
 
   .accordion-title {
@@ -416,7 +410,9 @@ fra hverandre*/
     
 }
 
-.accordion-item .accordion-title {
+.accordion-item1 .accordion-title, .accordion-item2 .accordion-title, .accordion-item3 .accordion-title, 
+.accordion-item4 .accordion-title,.accordion-item5 .accordion-title, .accordion-item6 .accordion-title,
+.accordion-item7 .accordion-title, .accordion-item8 .accordion-title {
     font-size: 1.2rem;
     font-weight: bold;
     display: flex;
@@ -524,6 +520,19 @@ input[type="checkbox"]{
     font-weight: bold;
 }
 
+/* Legger til mer luft rundt tabellen for bedre layout */
+.container-3 {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Begrenser tabellens bredde for bedre lesbarhet */
+    }
+    
+    .accordion-content {
+    background-color: #f9f9f9; /* Subtil bakgrunn for kontrast */
+    padding: 20px;
+    border-radius: 8px;
+    }
+
 
 
 /* Tabelloppsett */
@@ -537,9 +546,8 @@ table {
 }
 
 table, th, td {
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ddd;
-    text-align: left;
 }
 
 th {
@@ -551,9 +559,6 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-tr:hover {
-    background-color: #ddd;
-}
 
 td {
     vertical-align: top;
@@ -572,10 +577,51 @@ table td, table th {
     word-wrap: break-word;
 }
 
+@media (max-width: 768px) {
+    table {
+        border: none;
+    }
+
+    table thead {
+        display: none; /* Skjuler overskriftene */
+    }
+
+    table tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    table td {
+        display: flex;
+        justify-content:space-between;
+        padding-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+    
+
+    .study-year {
+        font-size: 1.1em;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+
+
 .container {
     max-width: 1200;
     margin: 0 auto;
 }
+
 /* Redigerer tabellene både struktur og farge*/
 h1 {
     font-size: 2rem;
@@ -589,26 +635,7 @@ h2 {
     color: #2d2d2d;
 }
 
-.semester {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 30px;
-}
 
-.emne {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: calc(33.33% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.emne p {
-    font-size: 1rem;
-    margin-top: 10px;
-}
 .container {
     text-align: center;
     max-width: 600px;
