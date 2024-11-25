@@ -272,7 +272,7 @@ fra hverandre*/
 }
 /* slutt på tabell med informasjon */
 
-/* Rangserer studietprogrammet*/
+/* Rangserer studietprogrammet med bruk av grid*/
 .accordion {
     display: grid;
     grid-row: 2;
@@ -452,9 +452,8 @@ fra hverandre*/
     text-decoration: underline;
     text-decoration-color: orange;
 }
+
 /* Endrer fra +/- for lukking og åpning av innholdet*/
-
-
 .accordion-title .icon::before {
     content: '+';
 }
