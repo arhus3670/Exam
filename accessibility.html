@@ -26,36 +26,40 @@
     <main class="accessibility-grid">
         <div class="test-1">
         <h1>Accessibility</h1> 
-            <h2>Bilder av github samarbeid</h2>
-                <img src="BIlder/samarbeid-1.png" alt="bilde" width="600" height="400">
+            <h2>Bilder av testen og kodevalg</h2>
+                <img src="BIlder/test.png" alt="bilde" width="600" height="400">
             </div>
             <div class="test-2">
-                <img src="BIlder/smarbeid-2.png" alt="bilde" width="600" height="400">
+                <img src="BIlder/kode1.png" alt="bilde" width="600" height="400">
             </div>
     
     
     
             <div class="code-1">
             <h2>Bilder av spesefike endringer</h2>
-                <img src="BIlder/endringer-1.png" alt="bilde" width="600" height="400">
+                <img src="BIlder/kode2.png" alt="bilde" width="600" height="400">
             </div>
             <div class="code-2">
-                <img src="BIlder/endringer-2.png" alt="bilde" width="600" height="400">
+                <img src="BIlder/kode3.png" alt="bilde" width="600" height="400">
             </div>
             <div class="accessibility">
             <h3> Fordeler med github</h3>
             <p>
-                For å jobbe sammen som en gruppe har vi hatt behov for å jobbe med github. Github er en fin plattform/app som gjør det enkelt å samarbeide med andre mennesker. Det er fint å bruke dette når man samarbeider i større grupper fordi da kan man se hva andre har endret på og hva du selv har endret på ved å pushe og pulle.
+                Det å sikre at nettsiden vår er tilgjengelig for alle brukere, inkludert de med funksjonsnedsettelser er en prioritet for oss. Vi vil nå fortelle om tilgjengelighetsvalgene som ble tatt under utviklingen av nettsiden og utover resultatene fra den automatiserte testen fra Lighthouse.   
             </p>
+            <h3> Resultater fra automatisert testing </h3>
             <p>
-                Det er et fint verktøy for å være oppdatert på hva din gruppe har gjort. Du kan samarbeide med andre uten å møte dem fysisk og dere kan dele ting enkelt med hverandre uten å sende noe spesifikt til den personen. Når to personer gjør samme endring så kommer det opp at hvis man pusher dette vil en merge konflikt skje. Dette hjelper deg med å forstå hvilke endringer man vil beholde av de to, og det forhindrer at det den andre personen gjøre blir borte. Hvis noen bruker en annen bransje og vil merge den i main brasje må den personen få godkjennelse av noen andre sånn at noen andre kan se det personen har gjort før det blir en del av main brasje. 
+                Automatiserte testere er en fin indikator for å evaluere tilgjengelighet. Vår nettside fikk en score på 93 for tilgjengelighet, noe som er en strek indikasjon på at nettsiden vår følger gode praksiser for tilgjengelighet. Automatiserte testere gir imidlertid bare et delvis bilde, de kan identifisere vanlige problemer som manglende alt-tekst for bilder, feilaktig overskriftsstrukturer og fargekontrastbrudd. Vi brukte Lighthouse for å evaluere disse aspektene. Alt-tekst for bilder for å sikre at alle bilder har beskrivende og meningsfull alt-tekst. Fargekontrast for å kontrollere at teksten er lesbar for brukere med synshemninger ved å verifisere tilstrekkelige fargekontrastforhold. Tastaturnavigasjon for å sikre at brukere kan navigere nettsiden ved å bruke bare tastaturet, noe som er essensielt for de som ikke bruker mus. Disse testene bekreftet at nettsiden vår presterer godt på disse områdene, men det betyr ikke at nettsiden er fullt tilgjengelig.  
             </p>
+            <h3> Manuell gjennomgang og tilpassende kodevalg </h3>
             <p>
-                Github er et fint verktøy for å se hvilke endringer andre har gjort, fordi når man får opp endringene få man også opp det som har blitt endret. Så man kan spesifikt se akkurat hva som har blitt endret. Endrer man på strøelsen av et bilde vil det komme opp i rødt det du endret og i grønt det du endret det til. 
+                Automatiserte tester er et godt utgangs punkt i å teste nettsiden, men det er også lurt å gjennomføre en manuell gjennomgang for å fange opp problemer som Lighthouse kanskje ikke oppdager. En manuell gjennomgang betyr å teste nettsiden med faktiske brukere og gjennomgang i ulike nettlesere. Noen nøkkelvalg vi implementerte i koden for å forbedre tilgjengeligheten var å benytte riktige HTML-elementer som <header>, <footer>, <main> og <nav> som hjelper skjermleseren med å forstå strukturen på nettsiden. Vi passet også på at overskrifter brukes på en hierarkisk måte som <h1>, <h2< og <h3> for å hjelpe brukere med å navigere innholdet enkelt. Skjemaer er viktig for interaksjon, men de kan være en frustrasjon for brukere med funksjonsnedsettelser. Vi implementerte derfor klare etiketter for alle skjemaelementer og sørget for at de er knyttet til sine inndatafelter ved å bruke id-attributter. Vi har også sørget for at nettsiden er navigerbar med tastaturet. Designet til nettsiden inkluderer også et tilpasset fargeskjema som viser kontrastforhold mellom tekst og bakgrunnsfarger. Vi har også implementert en menyknapp øvet på nettsiden som gjør det enkelt å gå fra en side til neste side. Meny knappen er også tastatur vennlig fordi vi implementerte i css at når tastaturet eller musen er på en av valgene så vil det valget endre farge. For oss var det viktig at nettsiden er strukturert og vi har brukt grid layout for å hjelpe oss med dette. Vi fant også ut at når vi gjorde skjermen mindre så overlappet mye av innholdet seg vi valgte derfor å sette inn @media i css. Noe annet vi lå merke til når vi testet siden var at når vi hadde dropdown menyene 2 og 2 nedover på virket dette hvordan tabellen så ut. Vi valgte derfor å la tabellen stå alene på en rad med å se andre fortsatt er to og to nedover. Vi fikset dette ved å bruke grid-layout.  
     
             </p> 
+            <p>
+                Ved å kombinere resultatene fra automatiserte tester med manuell testing og gode kodeprinsipper, har vi skapt en nettside som er strukturert, lett navigerbar, og tilgjengelig for alle. Selv om automatiserte tester som Lighthouse gir oss verdifulle innsikter, var det gjennom manuell gjennomgang vi identifiserte og løste mer komplekse problemer.
+            </p>
             </div>
-        </main>
         
     </main>
     <footer>

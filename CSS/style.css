@@ -559,7 +559,7 @@ td {
     vertical-align: top;
 }
 
-/* Style for study year rows */
+/*  stilen for studieår rader */
 .study-year {
     background-color: #f9f9f9;
     font-weight: bold;
@@ -785,47 +785,38 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-/* starten på github siden */ 
+/* starten på accessibility siden */ 
 .accessibility-grid{
     display: grid;
 }
-
+/*bilde på venstre side på første rad*/
 .test-1{
     grid-row: 1; 
     grid-column:1/2 ;
     padding-left: 50px;
     
 } 
-
+/*bilde på høyre side på første rad*/
 .test-2{
     grid-row: 1; 
     grid-column:2/3 ;
     padding-top: 115px;
     padding-right: 50px;
 }
-
+/*bilde på venstre side på andre rad*/
 .code-1{
     grid-row: 2; 
     grid-column: 1/2;
     padding-left: 50px;
 } 
-
+/*bilde på høyre side på andre rad*/
 .code-2 {
     grid-row: 2;
     grid-column: 2/3;
     padding-top: 50px;
 }
-
-.fordeler{
+/*teksten plassert på tredje rad på venstre side*/
+.accessibility{
     grid-row:3;
     grid-column: 1/2;
     padding-left: 50px;
@@ -835,22 +826,34 @@ footer {
 @media (max-width: 768px) {
     .accessibility-grid {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Add space between items */
+        flex-direction: column; 
+        padding: 15px;
+    }
+    .test-1 h1{
+        text-align: center;
+        font-size: 1.8em;
     }
 
-    .test-1, 
-    .test-2, 
-    .code-1, 
-    .code-2, 
-    .fordeler {
-        grid-row: auto; /* Reset grid-row */
-        grid-column: auto; /* Reset grid-column */
-        padding: 10px; /* Adjust padding for smaller screens */
+    .test-1, .test-2, .code-1, .code-2, .accessibility {
+        text-align: center;
+        padding: 15px; 
+    }
+
+    .test-1 h2, .code-1 h2{
+        font-size: 1.2em;
+    }
+
+    .accessibility{
+        text-align: left;
+        padding: 15px;
+        font-size: 0.8em;
+    }
+
+    .accessibility-grid img {
+        width: 100%;
+        height: auto; 
     }
 }
-
-
 
 
 
