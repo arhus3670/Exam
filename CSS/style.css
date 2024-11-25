@@ -905,10 +905,6 @@ footer {
     padding: 0;
 }
 
-.bok-logo img{
-    height: 90px;
-}
-
 /*header-stil med bruk av flex*/
 .activity-header {
     display: flex;
@@ -916,6 +912,10 @@ footer {
     align-items: center;
     padding: 30px;
     background-color: lightcoral
+}
+
+.bok-logo img{
+    height: 90px; 
 }
 
 .activity-header img{
