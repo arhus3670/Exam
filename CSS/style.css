@@ -436,7 +436,7 @@ fra hverandre*/
     font-size: 12px; 
   
 }
-/* fikser sub-innholdet som hører til en høved innhold */
+/* fikser sub-innholdet som hører til en hoved innhold */
 .sub-accordion-item .sub-accordion-title {
     font-size: 1rem;
     margin-top: 10px;
@@ -648,7 +648,7 @@ h1, h2 {
     color: #000;
 }
 a {
-    color: #f5a623;
+    color: #000000;
     text-decoration: none;
 }
 a:hover {
@@ -917,6 +917,7 @@ footer {
 
 .activity-header img{
     height: 90px;
+
 }
 
 /*Meny-button med bakgrunnsfarge uten border*/
